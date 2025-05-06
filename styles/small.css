@@ -1,0 +1,146 @@
+:root {
+    --primary-color: white ;
+    --secondary-color: #265279;
+    --tertiary-color: rgb(204, 202, 202);
+    --accent-color: #292c2eea;
+    --accent-color2: #f4f800;
+}
+
+p {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+
+
+h1 {
+    background-color: var(--secondary-color);
+    color : var(--primary-color);
+	padding: 1rem;
+	font-size: 2rem;
+	text-align: center;
+    margin: auto;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--accent-color);
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+nav a:hover {
+    text-decoration: overline;
+}
+
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 10px;
+}
+
+
+main {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 2fr 1fr;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.card {
+    display: block;
+    padding: 0;
+    margin: 5px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 10px;
+}
+.card h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.3em;
+}
+.card img {
+    padding: 5px;
+    margin: 0;
+    border-radius: 20px;
+}
+.card p {
+    padding: 10px;
+}
+.resources {
+    padding: 10px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: darkblue;
+    margin-top: 30%;
+}
+.resources a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1px;
+    border-bottom: 1px solid var(--tertiary-color);
+}
+.profile_info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+.country_info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1em;
+}
+figure {
+    padding: 0;
+    max-width: 220px;
+    margin: 0;
+}
+
+
+footer {
+    display: grid;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+footer p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1px;
+}
+#lastModified {
+    color: var(--accent-color2);
+    font-size: 0.8em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
