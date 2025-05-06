@@ -13,47 +13,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
 
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD 231 – Agustin Heredia</h1>
+        <div class="profile" id="profile">
+            <img src="images/me.jpg" alt="profile image" class="profile_img">
+            <span>Agustin Heredia</span>
+            <button id="hamburger" aria-label="navigation links"></button>
+        </div>
         <nav>
+            <a href="index.html">Home </a>
+            <a href="">Chamber</a>
+            <a href="">Final</a>
+            <a href="https://github.com/AgU131">GitHub Profile</a>
             <a href="https://www.linkedin.com/in/agustin-heredia-urb/">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
-            <a href="index.html">Final Project</a>
         </nav>
     </header>
+
     <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <div class="profile_info">
-                <p>Welcome to my WDD 131 homepage. My name is Agustín Heredia, and I'm passionate about web development. Throughout this course, I aim to strengthen my front-end development skills and learn new techniques.</p>
-                <img src="images/me.jpg" alt="profile image" class="profile_img">
-            </div>
+        <h1>Home</h1>
+        <section class="card" id="courseWork">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        
+        <section class="card" id="location">
             <h3>Cordoba, Argentina</h2>
             <div class="country_info">
                 <figure class="image-caption">
                     <img src="images/arg_flag.webp" alt="Arg flag image" class="flag_img">
                     <figcaption><em>Official Flag of Argentina</em></figcaption>
                 </figure>
-                <p>Argentina is a vast country located in the southern part of South America. The eighth largest country in the world, it is the second largest country in South America after Brazil, and it's about one-third the size of the United States. Argentina is bordered by the Andes Mountains and Chile to the west.</p>
             </div>
         </section>
-        <section class="card">
-            <h2>Web Dev resources</h2>
+        <section class="card" id="certificates">
+            <h2>Web and Computer Programming Certificate</h2>
             <div class="resources">
-                <a href="https://byupw.instructure.com/">• Canvas</a>
-                <a href="https://byupw.instructure.com/">• Canvas</a>
-                <a href="https://byupw.instructure.com/">• Canvas</a>
-                <a href="https://byupw.instructure.com/">• Canvas</a>
-                <a href="https://byupw.instructure.com/">• Canvas</a>
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
             </div>
+            <p id="totalCredits"></p>
         </section>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
+        <img src="images/arg_flag.webp" alt="Arg flag image" class="flag_img" width="40" height="30">
         <p id="lastModified"><span id="dateModified"></span></p>
     </footer>
 </body>
