@@ -196,7 +196,17 @@ footer p {
 }
 
 
-
+/*  HAMBURGER MENU  */
+#hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: var(--secondary-color);
+    margin-left: 10px;
+}
+#hamburger:hover {
+    color: var(--accent-color2);
+}
 
 
 @media (min-width: 320px) {

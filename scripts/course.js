@@ -80,10 +80,7 @@ const courses = [
 ]
 
 
-const courseoutput = document.querySelector("#coursesList")
-
-const coursesElement = document.querySelector('#coursesList');
-
+const courseout = document.querySelector("#coursesList")
 
 // Function to display all courses
 document.querySelector('#all').addEventListener('click', () => {
@@ -103,7 +100,7 @@ document.querySelector('#cse').addEventListener('click', () => {
 });
 
 function displayCourses(filteredcourses) {
-    courseoutput.innerHTML = '';
+    courseout.innerHTML = '';
     filteredcourses.forEach(crs => {
   
       const courseCard = document.createElement('div')
@@ -117,19 +114,18 @@ function displayCourses(filteredcourses) {
   
       courseCard.innerHTML=`${crs.subject} ${crs.number}`
 
-      courseoutput.appendChild(courseCard)
+      courseout.appendChild(courseCard)
     });
+}
 
 displayCourses(courses)
 
+// //Another loop to display all courses
 // courses.forEach(course => {
-
 //     const div = document.createElement('div');
 //     div.classList.add('course');
 //     const h3 = document.createElement('h3');
 //     h3.innerHTML = `<em>${course.subject}</em> ${course.number}`;
 //     div.appendChild(h3);
-//     coursesElement.appendChild(div);
-    
-
+//     coursesout.appendChild(div);
 // });

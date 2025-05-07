@@ -1,5 +1,4 @@
-
-
+/* Small screen styles */
 @media (max-width: 320px) {
     main {
         grid-template-columns: 1fr;
