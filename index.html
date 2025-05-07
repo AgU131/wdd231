@@ -21,7 +21,7 @@
     <header>
         <div class="profile" id="profile">
             <img src="images/me.jpg" alt="profile image" class="profile_img">
-            <span>Agustin Heredia</span>
+            <span>Agustin E. Heredia</span>
             <button id="hamburger" aria-label="navigation links"></button>
         </div>
         <nav>
@@ -35,6 +35,7 @@
 
     <main>
         <h1>Home</h1>
+        <div class="general">
         <section class="card" id="courseWork">
             <h2>Course Work</h2>
             <ul>
@@ -43,16 +44,18 @@
                 <li></li>
             </ul>
         </section>
-        
+
         <section class="card" id="location">
-            <h3>Cordoba, Argentina</h2>
+            <h2>Cordoba, Argentina</h2>
             <div class="country_info">
                 <figure class="image-caption">
-                    <img src="images/arg_flag.webp" alt="Arg flag image" class="flag_img">
+                    <img src="images/arg_flag.webp" alt="Arg flag image" class="flag_img" id="arg_flag">
                     <figcaption><em>Official Flag of Argentina</em></figcaption>
                 </figure>
             </div>
         </section>
+        </div>
+        <div>
         <section class="card" id="certificates">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="resources">
@@ -60,8 +63,9 @@
                 <button id="wdd">WDD Courses</button>
                 <button id="cse">CSE Courses</button>
             </div>
-            <p id="totalCredits"></p>
+            <section id="coursesList"></section>
         </section>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
