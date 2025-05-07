@@ -142,12 +142,12 @@ h1 {
 #courseWork {
     border: #eee;
     margin: .5rem 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    align-items: center;
 }
 ul {
     padding: 0;
-    margin: 0;
-    
+    margin-left: 50px;
 }
 
 /* COUNTRY CARD */
@@ -177,7 +177,7 @@ figure {
 }
 
 
-/* ALL COURSES */
+/* ALL COURSES LIST */
 @keyframes color_change {
 	0% { background-color: #F4F1DE; }
     50% { background-color: #ece036; }
