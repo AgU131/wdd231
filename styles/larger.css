@@ -46,6 +46,19 @@ nav a:hover {
     text-decoration: overline;
     color:#fdff9a;
 }
+/*  HAMBURGER MENU  */
+#hamburger-btn {
+    display: none;
+    cursor: pointer;
+}
+/* #hamburger::before {
+	content: "\2630";
+}
+#hamburger.show::before {
+	content: "x";
+} */
+
+
 
 /* PROFILE */
 #profile {
@@ -60,7 +73,6 @@ header span {
     font-weight: 500;
     font-size: 3em;
 }
-
 .profile img {
     max-width: 120px;
     max-height: 120px;
@@ -166,15 +178,37 @@ figure {
 
 
 /* ALL COURSES */
-.coursesList {
+@keyframes color_change {
+	0% { background-color: #F4F1DE; }
+    50% { background-color: #ece036; }
+	100% { background-color: #e7885b; }
+}
+#certificates div {
+    text-align: center;
+}
+#certificates button {
+    padding: .75rem;
+    margin: .5rem;
+    border: 1px solid #999;
+    border-radius: 10px;
+    /*background: linear-gradient(#F4F1DE, #E07A5F);*/
+    animation: color_change 2s infinite alternate;
+}
+#coursesList {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-    grid-column: 1 / span 2;
+}
+#coursesList div {
+    padding: .75rem;
+    margin: .5rem;
+    border-radius: 10px;
+    border: 1px solid #999;
+    background-color: #dcecfa;
 }
 
 
- /*  FOOTER  */
+
+/*  FOOTER  */
 footer {
     display: grid;
     justify-content: center;
@@ -196,20 +230,10 @@ footer p {
 }
 
 
-/*  HAMBURGER MENU  */
-#hamburger {
-    display: none;
-    cursor: pointer;
-    font-size: 2em;
-    color: var(--secondary-color);
-    margin-left: 10px;
-}
-#hamburger:hover {
-    color: var(--accent-color2);
-}
 
 
-@media (min-width: 320px) {
+
+/* @media (min-width: 320px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -222,4 +246,26 @@ footer p {
     nav {
         grid-template-rows: 1fr;
     }
-}
+    #hamburger-btn {
+        display: none;
+        
+    }
+    #primary-nav {
+        max-height: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #primary-nav li {
+        padding: 0 1rem;
+        font-size: 900;
+    }
+    #primary-nav a {
+        color: var(--text-color-light);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+    }
+    #primary-nav a:hover {
+        color: yellow;
+    }
+} */
