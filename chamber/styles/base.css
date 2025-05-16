@@ -75,7 +75,7 @@ header span {
 }
 #primary-nav a.active {
     color: #fdff9a;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* Hamburger Menu Styles */
