@@ -31,11 +31,20 @@
             <button id="hamburger-btn" aria-label="Toggle Menu"> &#9776; </button>   <!-- Hamburger button: &#9776;  or  ☰  -->
         </div>
         <nav id="primary-nav">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="directory.html">Directory</a>
             <a href="discover.html">Discover</a>
             <a href="join.html">Join</a>
         </nav>
+        <!-- //sugerencia de copilot para hacer el "active" automatico con js: 
+        <script>
+        // Selecciona todos los enlaces del nav
+        document.querySelectorAll('#primary-nav a').forEach(link => {
+            if (link.href === window.location.href || link.href === window.location.origin + window.location.pathname) {
+            link.classList.add('active');
+            }
+        });
+        </script> -->
     </header>
 
     <main>

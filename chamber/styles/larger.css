@@ -8,43 +8,47 @@
 
     header {
     background-color: var(--primary-color);
-    align-items: center;
     }
     
     /* NAV */
-    
-    nav {
+    #primary-nav {
+        max-height: none;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: var(--primary-color);  /*#2a384a*/
         justify-content: space-around;
-        background-color: var(--primary-color);
-        padding: 10px;
+        border-top: #3c5f3b 0.1px solid;
     }
-    nav a {
+    #primary-nav a {
+        color: white;
         text-decoration: none;
         font-size: 1.2em;
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
     }
-    nav a:hover {
+    #primary-nav a:hover {
         text-decoration: overline;
         color:#fdff9a;
-    }
-    #primary-nav {
-        max-height: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
         background-color: transparent;
     }
+    
     /*  HAMBURGER MENU  */
     #hamburger-btn {
         display: none;
     }
 
+
+
+
+
     /* HERO */
     .hero a {
         width: 150px;
     }
+
+
+
 
     /*  FOOTER  */
     footer div {
@@ -62,6 +66,8 @@
     } */
 
 }
+
+
 
 
 /* AI sugestions */

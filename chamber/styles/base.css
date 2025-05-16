@@ -38,26 +38,12 @@ header span {
     font-size: 3em;
 }
 /* NAV */
-nav {
-    background-color: var(--primary-color);
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-}
-nav a {
-    color: white;
-    margin: 5px 0;
-    font-size: 1.2em;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-}
-nav a:hover {
-    text-decoration: overline;
-    color:#fdff9a;
-}
+
 #primary-nav {
-    display: flex;
+    text-align: center;
+    align-items: center;
     flex-direction: column;
+    background-color: var(--primary-color);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -67,6 +53,17 @@ nav a:hover {
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
+#primary-nav a {
+    color: white;
+    margin: 5px 0;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+#primary-nav a:hover {
+    color:#fdff9a;
+    background-color: var(--secondary-color);
+}
 #primary-nav.show {
     max-height: 500px;
 }
@@ -75,6 +72,10 @@ nav a:hover {
     text-decoration: none;
     display: block;
     padding: 0.5rem 0;
+}
+#primary-nav a.active {
+    color: #fdff9a;
+    text-decoration: none;
 }
 
 /* Hamburger Menu Styles */

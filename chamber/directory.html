@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Agustin Heredia</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Agustin Heredia - Week 01 Activity creating a personal homepage">
+    <meta name="author" content="Agustin Heredia">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="data/members.json" defer></script>
+    
+    <link rel="icon" href="images/favicon_rounded.ico">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <img src="images/logo_tree_cgpt.png" alt="profile image" class="profile_img" width="75" height="75">
+            <div class="profile" id="profile">
+                <span id="profile_name">Timbuktu</span>
+                <div>Chamber of Commerce</div>
+            </div>
+            <button id="hamburger-btn" aria-label="Toggle Menu"> &#9776; </button>   <!-- Hamburger button: &#9776;  or  ☰  -->
+        </div>
+        <nav id="primary-nav">
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero1.jpg" alt="Hero image" class="hero_img">
+            <a href="join.html">Join Us</a>
+        </div>
+        <h1>Home</h1>
+        <div class="mainInfo">
+            <section id="events"></section>
+            <section id="currentWeather"></section>
+            <section id="weatherforecast"></section>
+        </div>
+        <div class="buisnesses" id="buisnesCard"></div>
+        
+    </main>
+
+    <footer>
+        <div>
+            <section class="contact">
+                <span>Timbuktu Chamber of Commerce</span>
+                <p>1234 Main St.</p>
+                <p>Timbuktu, TM 12345</p>
+                <p>chamber@chamber.com</p>
+                <p>(223) 555-5555</p>
+            </section>
+
+            <section class="socialMedia">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/fb_icon_ligth.png" alt="Facebook icon" class="social_icon" width="40" height="40">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/ig_icon.png" alt="Instagram icon" class="social_icon" width="40" height="40">
+                </a>
+                <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/xtw_icon.png" alt="X icon" class="social_icon" width="40" height="40">
+                </a>
+            </section>
+            
+            <section class="myInfo">
+                <p>WDD231 Class Proyect</p>
+                <p>🧉 Agustin Heredia 🧉 Argentina</p>
+                <p><span id="copywrite"></span></p>
+                <p id="lastModified"></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
