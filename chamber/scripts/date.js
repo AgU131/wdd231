@@ -1,4 +1,5 @@
 // Dates and CopyWrite
+
 let year = new Date().getFullYear();
 let lastModified = document.lastModified;
 // \u00A9 --> the unicode for the copywrite symbol. "&copy;" in html 
