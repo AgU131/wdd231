@@ -1,4 +1,4 @@
-@media (min-width: 720px) {
+@media (min-width: 768px) {
     /*  ALL  */
     * {
         box-sizing: border-box;
@@ -56,12 +56,13 @@
         padding: 1.5rem;
     }
     footer section {
-        justify-content: left;
+        justify-content: center;
+        align-items: center;
     }
-    footer .myInfo {
+    /* footer .myInfo {
         align-items: left;
         justify-content: left;
-    }
+    } */
 
 }
 
