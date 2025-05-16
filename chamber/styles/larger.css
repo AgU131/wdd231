@@ -1,21 +1,74 @@
-@media (min-width: 320px) {
-main {
-    padding: 1.5rem;
-}
-/*  HAMBURGER MENU  */
-#hamburger-btn {
-    display: none;
-    cursor: pointer;
-}
+@media (min-width: 720px) {
+    /*  ALL  */
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 
+    header {
+    background-color: var(--secondary-color);
+    align-items: center;
+    }
+    
+    /* NAV */
+    /*  HAMBURGER MENU  */
+    #hamburger-btn {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--primary-color);
+        padding: 10px;
+    }
+    nav a {
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+    }
+    nav a:hover {
+        text-decoration: overline;
+        color:#fdff9a;
+    }
+    #primary-nav {
+        max-height: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+    }
+    #primary-nav li {
+        padding: 0 1rem;
+    }
+    
 
+    /* HERO */
+    .hero a {
+        width: 150px;
+    }
 
-
+    /*  FOOTER  */
+    footer div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        padding: 1.5rem;
+    }
+    footer section {
+        justify-content: left;
+    }
+    footer .myInfo {
+        align-items: left;
+        justify-content: left;
+    }
 
 }
 
 
 /* AI sugestions */
+
+/* 
 :root {
   --verde-hoja: #3A7F49;
   --verde-claro: #A4D7A2;
@@ -70,4 +123,4 @@ footer {
   color: var(--blanco);
   padding: 2rem;
   text-align: center;
-}
+} */

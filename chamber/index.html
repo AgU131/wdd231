@@ -6,27 +6,29 @@
     <title>WDD 231 – Agustin Heredia</title>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Agustin Heredia - Week 01 Activity creating a personal homepage">
     <meta name="author" content="Agustin Heredia">
-
-    <!-- <link rel="stylesheet" href="styles/larger.css"> -->
-    <link rel="stylesheet" href="styles/base.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="images/favicon_rounded.ico">
-
+    
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="data/members.json" defer></script>
+    
+    <link rel="icon" href="images/favicon_rounded.ico">
 </head>
 <body>
     <header>
-        <div class="profile" id="profile">
+        <div class="head">
             <img src="images/logo_tree_cgpt.png" alt="profile image" class="profile_img" width="75" height="75">
-            <span class="profile_name">Timbuktu</span>
-            <p>Chamber of Commerce</p>
-            <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>   <!-- Hamburger button: &#9776; -->
+            <div class="profile" id="profile">
+                <span id="profile_name">Timbuktu</span>
+                <div>Chamber of Commerce</div>
+            </div>
+            <button id="hamburger-btn" aria-label="Toggle Menu"> &#9776; </button>   <!-- Hamburger button: &#9776;  or  ☰  -->
         </div>
         <nav id="primary-nav">
             <a href="index.html">Home</a>
@@ -38,8 +40,8 @@
 
     <main>
         <div class="hero">
-            <img src="images/hero_img.jpg" alt="Hero image" class="hero_img">
-            <button class="joinButton"><a href="join.html">Join Us</a></button>
+            <img src="images/hero1.jpg" alt="Hero image" class="hero_img">
+            <a href="join.html">Join Us</a>
         </div>
         <h1>Home</h1>
         <div class="mainInfo">
@@ -76,8 +78,8 @@
             <section class="myInfo">
                 <p>WDD231 Class Proyect</p>
                 <p>🧉 Agustin Heredia 🧉 Argentina</p>
-                <p><span id="copywrite"></span>
-                <p id="lastModified"><span id="dateModified"></span></p>
+                <p><span id="copywrite"></span></p>
+                <p id="lastModified"></p>
             </section>
         </div>
     </footer>
