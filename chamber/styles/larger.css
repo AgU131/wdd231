@@ -1,0 +1,73 @@
+@media (min-width: 320px) {
+main {
+    padding: 1.5rem;
+}
+/*  HAMBURGER MENU  */
+#hamburger-btn {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+}
+
+
+/* AI sugestions */
+:root {
+  --verde-hoja: #3A7F49;
+  --verde-claro: #A4D7A2;
+  --arena-claro: #F2E5C4;
+  --amarillo-sol: #F9A825;
+  --marron-oscuro: #3B2F2F;
+  --negro-suave: #1E1E1E;
+  --blanco: #FFFFFF;
+}
+
+body {
+  background-color: var(--arena-claro);
+  color: var(--negro-suave);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--verde-hoja);
+  color: var(--blanco);
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--amarillo-sol);
+}
+
+button.primary {
+  background-color: var(--amarillo-sol);
+  color: var(--negro-suave);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.primary:hover {
+  background-color: var(--verde-hoja);
+  color: var(--blanco);
+}
+
+footer {
+  background-color: var(--marron-oscuro);
+  color: var(--blanco);
+  padding: 2rem;
+  text-align: center;
+}

@@ -7,30 +7,30 @@
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Agustin Heredia - Week 01 Activity creating a personal homepage">
     <meta name="author" content="Agustin Heredia">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/small.css">
+    <!-- <link rel="stylesheet" href="styles/small.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon_rounded.ico">
 
-    <script src="scripts/" defer></script>
+    <script src="scripts/navigation.js" defer></script>
     <script src="data/members.json" defer></script>
 </head>
 <body>
     <header>
         <div class="profile" id="profile">
-            <img src="images/me.jpg" alt="profile image" class="profile_img">
-            <span>Agustin E. Heredia</span>
+            <img src="images/me.jpg" alt="profile image" class="profile_img" >
+            <span>Timbuktu</span>
+            <p>Chamber of Commerce</p>
             <button id="hamburger-btn" aria-label="Toggle Menu">&#9776;</button>
         </div>
         <nav id="primary-nav">
-            <a href="../index.html">Home aaa</a>
-            <a href="directory.html">Chamber</a>
-            <a href="">Final</a>
-            <a href="https://github.com/AgU131">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/agustin-heredia-urb/">LinkedIn</a>
+            <a href="../index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="">Discover</a>
+            <a href="">Join</a>
         </nav>
     </header>
 
@@ -38,10 +38,26 @@
         <h1>Chamber</h1>
         
     </main>
+
     <footer>
-        <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
-        <img src="images/arg_flag.webp" alt="Arg flag image" class="flag_img" width="40" height="30">
-        <p id="lastModified"><span id="dateModified"></span></p>
+        <div>
+            <section class="myInfo">
+                <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
+                <img src="images/arg_flag.webp" alt="Arg flag image" class="flag_img" width="40" height="30">
+                <p id="lastModified"><span id="dateModified"></span></p>
+            </section>
+
+            <section class="socialMedia">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/fb_icon.png" alt="Facebook icon" class="social_icon" width="40" height="40">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/ig_icon.png" alt="Instagram icon" class="social_icon" width="40" height="40">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/tw_icon.png" alt="Twitter icon" class="social_icon" width="40" height="40">
+            </section>
+        </div>
     </footer>
 </body>
 </html>
