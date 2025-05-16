@@ -7,15 +7,12 @@
     }
 
     header {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     align-items: center;
     }
     
     /* NAV */
-    /*  HAMBURGER MENU  */
-    #hamburger-btn {
-        display: none;
-    }
+    
     nav {
         display: flex;
         justify-content: space-around;
@@ -39,10 +36,10 @@
         justify-content: center;
         background-color: transparent;
     }
-    #primary-nav li {
-        padding: 0 1rem;
+    /*  HAMBURGER MENU  */
+    #hamburger-btn {
+        display: none;
     }
-    
 
     /* HERO */
     .hero a {

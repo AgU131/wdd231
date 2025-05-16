@@ -70,9 +70,6 @@ nav a:hover {
 #primary-nav.show {
     max-height: 500px;
 }
-#primary-nav li {
-    padding: 0.5rem 1rem;
-}
 #primary-nav a {
     color: white;
     text-decoration: none;
