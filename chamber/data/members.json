@@ -1,59 +1,59 @@
 {
     "members": [
         {
-            "name": "Shiz Sheep Shearing",
-            "address": "106 Fall St, Baja, California",
+            "name": "Nile HR Enterprise",
+            "address": "111 Fall St, Australia",
             "phone": "555-555-5551",
             "url": "https://google.com/",
-            "logopath": "logo1.webp",
+            "logopath": "member1.jpg",
             "level": 3
         },
         {
-            "name": "Manti Metal Works",
-            "address": "123 Maple Street, Baja, California",
+            "name": "Natural Escapes Resorts",
+            "address": "22 Maple Street, Australia",
             "phone": "555-555-5552",
             "url": "https://google.com/",
-            "logopath": "logo2.webp",
+            "logopath": "member2.jpg",
             "level": 1
         },
         {
-            "name": "Teomner Tree Foundation",
-            "address": "20 E Bayard St, Baja, California",
+            "name": "Fish In-N-Out",
+            "address": "33 E Bayard St, Australia",
             "phone": "555-555-5553",
             "url": "https://google.com/",
-            "logopath": "logo3.webp",
+            "logopath": "member3.jpg",
             "level": 2
         },
         {
-            "name": "Hagoth Shipping",
-            "address": "19 Green St, Baja,  California",
+            "name": "Hotel California",
+            "address": "4 Green St, Australia",
             "phone": "555-555-5554",
             "url": "https://www.google.com/",
-            "logopath": "logo4.webp",
+            "logopath": "member4.jpg",
             "level": 3
         },
         {
-            "name": "Zarahemla City Offices",
-            "address": "39 Bridge St, Seneca Falls, California",
+            "name": "Central City Biulders",
+            "address": "555 Bridge St, Australia",
             "phone": "555-555-5555",
             "url": "https://www.google.com/",
-            "logopath": "logo5.webp",
+            "logopath": "member5.jpg",
             "level": 2
         },
         {
-            "name": "Gidgiddoni Greenhouses and Floral",
-            "address": "232 Gravel Rd, Baja, California",
+            "name": "Intel Highway Runners",
+            "address": "12 Gravel Rd, Australia",
             "phone": "555-555-5556",
             "url": "http://www.google.com/",
-            "logopath": "logo6.webp",
+            "logopath": "member6.jpg",
             "level": 1
         },
         {
-            "name": "Mulek Martial Arts",
-            "address": "1025 Edge Road, Baja, California",
+            "name": "Ryzen Fitness Corporation",
+            "address": "23 Edge Road, Australia",
             "phone": "555-555-5557",
             "url": "https://google.com/",
-            "logopath": "logo7.webp",
+            "logopath": "member7.jpg",
             "level": 3
         }
     ]
