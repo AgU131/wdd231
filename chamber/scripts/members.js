@@ -59,8 +59,8 @@ const displayMembers = (allMembers) => {
   });
 }
 
-const setGrid = document.querySelector('#btnGrid')
-const setList = document.querySelector('#btnList')
+const setGrid = document.querySelector('#gridB')
+const setList = document.querySelector('#listB')
 setGrid.addEventListener('click',() => {
   setGrid.className="active"
   setList.className=""
