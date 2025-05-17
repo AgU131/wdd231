@@ -22,3 +22,16 @@ if (hamburgerBtn && primaryNav) {
         });
     });
 }
+
+
+/*
+//sugerencia de copilot para hacer el "active" automatico con js: 
+<script>
+    // Selecciona todos los enlaces del nav
+    document.querySelectorAll('#primary-nav a').forEach(link => {
+        if (link.href === window.location.href || link.href === window.location.origin + window.location.pathname) {
+        link.classList.add('active');
+        }
+    });
+</script> 
+*/

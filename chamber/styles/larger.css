@@ -1,15 +1,12 @@
 @media (min-width: 768px) {
-    /*  ALL  */
-    * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-
+    
+    /*  HEADER  */
     header {
     background-color: var(--primary-color);
     }
     
+
+
     /* NAV */
     #primary-nav {
         max-height: none;
@@ -32,7 +29,6 @@
         color:#fdff9a;
         background-color: transparent;
     }
-    
     /*  HAMBURGER MENU  */
     #hamburger-btn {
         display: none;
@@ -40,13 +36,11 @@
 
 
 
-
-
+    /* MAIN */
     /* HERO */
     .hero a {
         width: 150px;
     }
-
 
 
 
