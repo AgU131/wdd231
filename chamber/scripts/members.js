@@ -49,6 +49,9 @@ const displayMembers = (allMembers) => {
     }
     
     const mySection = document.createElement('section')
+    // Sugerencias de Copilot (lo de agregarle una class)    const mySection = document.createElement('section');
+    mySection.classList.add('member-card');
+    // mySection.className = 'card'
     mySection.appendChild(myLogo)
     mySection.appendChild(myName)
     mySection.appendChild(myAddress)

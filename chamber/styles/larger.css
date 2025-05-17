@@ -27,6 +27,7 @@
     #primary-nav a:hover {
         text-decoration: overline;
         color:#fdff9a;
+        /* color:var(--text-light-black); */
         background-color: transparent;
     }
     /*  HAMBURGER MENU  */
