@@ -31,6 +31,13 @@ header div {
     align-items: center;
     justify-content: left;
 }
+.head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
 header img {
     display: block;
     width: 100px;
@@ -44,9 +51,10 @@ header span {
     font-weight: 500;
     font-size: 3em;
 }
-#profile {
+header .head #profile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    color: var(--text-black-back);
 }
 /* NAV */
 #primary-nav {

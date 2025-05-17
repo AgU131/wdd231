@@ -6,6 +6,7 @@ main {
 	background-color: #fff;
 	font-family: Acme, Arial, sans-serif;
 }
+
 /*  MENU  */
 .buttons {
 	padding: 1rem;
@@ -13,8 +14,12 @@ main {
     justify-content: space-between;
 }
 .buttons button {
-	padding: 1rem;
+    padding: 1rem;
 	font-weight: 700;
+    border-radius: 10px;
+}
+div.buttons button.active {
+    background-color: #f27d80;
 }
 .member-card section {
 	border: 1px solid rgb(0 0 0 / 0.1);
@@ -29,10 +34,6 @@ main {
 	font-family: Arial, sans-serif;
 	font-size: 0.85rem;
 	color: navy;
-}
-.buttons img {
-    width: 100%;
-    height: auto;
 }
 
 
