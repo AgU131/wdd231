@@ -2,7 +2,7 @@
 main {
 	margin: 0 auto;
 	padding: 0.5rem;
-	max-width: 700px;
+	max-width: 1200px;
 	background-color: #fff;
 	font-family: Acme, Arial, sans-serif;
 }
@@ -40,7 +40,7 @@ div.buttons button.active {
 /*  GRID  */
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
 }
