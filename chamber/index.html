@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 – Agustin Heredia</title>
+    <title>Timbuktu Chamber of Comerce</title>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Agustin Heredia - Week 01 Activity creating a personal homepage">
     <meta name="author" content="Agustin Heredia">
     
@@ -45,14 +45,28 @@
         </div>
         <h1>Home</h1>
         <div class="mainInfo">
-            <section id="events"></section>
-            <section id="currentWeather"></section>
-            <section id="weatherforecast"></section>
-        </div>
-        <div class="buisnesses" id="buisnesCard"></div>
-        
-    </main>
+            <section class="info" id="events">
+                <h2>Events</h2>
+                <p>Monday 6:00pm : Jacob fireside on the Allegory of the Olive Tree</p>
+                <p>Tuesday 10:00am : Coronation of Kink Noah</p>
+                <p>Wednesday 5:00pm : Archery contest for youth ages 16-18</p>
+            </section>
 
+            <section class="info" id="currentWeather">
+                <h2 id="city">Weather</h2>
+                <div>
+                    <img id="weather-icon" src="images/fake.png" alt="weather-icon" width="50" height="50">
+                    <span id="report"></span>
+                </div>
+            </section>
+
+            <section class="info" id="forecast">
+                <h2>Forecast</h2>
+                <span id="forecast"></span>
+            </section>
+        </div>
+        <div class="spotlights" id="spotlights"></div>
+    </main>
     <footer>
         <div>
             <section class="contact">
@@ -62,7 +76,6 @@
                 <p>chamber@chamber.com</p>
                 <p>(223) 555-5555</p>
             </section>
-
             <section class="socialMedia">
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                     <img src="images/fb_icon_ligth.png" alt="Facebook icon" class="social_icon" width="40" height="40">
@@ -74,7 +87,6 @@
                     <img src="images/xtw_icon.png" alt="X icon" class="social_icon" width="40" height="40">
                 </a>
             </section>
-            
             <section class="myInfo">
                 <p>WDD231 Class Proyect</p>
                 <p>🧉 Agustin Heredia 🧉 Argentina</p>
