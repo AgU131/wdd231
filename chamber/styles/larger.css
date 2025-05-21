@@ -1,64 +1,113 @@
 @media (min-width: 768px) {
-    
-    /*  HEADER  */
-    header {
-    background-color: var(--primary-color);
-    }
-    
-
-
-    /* NAV */
-    #primary-nav {
-        max-height: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: var(--primary-color);  /*#2a384a*/
-        justify-content: space-around;
-        border-top: #3c5f3b 0.1px solid;
-    }
-    #primary-nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.2em;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-    }
-    #primary-nav a:hover {
-        text-decoration: overline;
-        color:#fdff9a;
-        /* color:var(--text-light-black); */
-        background-color: transparent;
-    }
-    /*  HAMBURGER MENU  */
-    #hamburger-btn {
-        display: none;
-    }
+/* DIRECTORY */
+/*  HEADER  */
+header {
+  background-color: var(--primary-color);
+}
 
 
 
-    /* MAIN */
-    /* HERO */
-    .hero a {
-        width: 150px;
-    }
+/* NAV */
+#primary-nav {
+  max-height: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--primary-color);  /*#2a384a*/
+  justify-content: space-around;
+  border-top: #3c5f3b 0.1px solid;
+}
+#primary-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+#primary-nav a:hover {
+  text-decoration: overline;
+  color:#fdff9a;
+  /* color:var(--text-light-black); */
+  background-color: transparent;
+}
+/*  HAMBURGER MENU  */
+#hamburger-btn {
+  display: none;
+}
 
 
 
-    /*  FOOTER  */
-    footer div {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
-        padding: 1.5rem;
-    }
-    footer section {
-        justify-content: center;
-        align-items: center;
-    }
-    /* footer .myInfo {
-        align-items: left;
-        justify-content: left;
-    } */
+/* MAIN */
+/* HERO */
+.hero a {
+  width: 150px;
+}
+
+
+
+/*  FOOTER  */
+footer div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  padding: 1.5rem;
+}
+footer section {
+  justify-content: center;
+  align-items: center;
+}
+/* footer .myInfo {
+    align-items: left;
+    justify-content: left;
+} */
+
+
+/* INDEX PAGE */
+.home {
+  background-color: rgb(245, 241, 233);
+  /* background-color: var(--tertiary-color); */
+}
+.mainInfo {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+/* HERO */
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero a {
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  color: white;
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #2a384a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

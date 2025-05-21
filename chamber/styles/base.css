@@ -128,30 +128,6 @@ h1 {
 }
 
 
-/* HERO */
-.hero {
-    position: relative;
-}
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.hero a {
-    text-decoration: none;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    display: block;
-    width: 100px;
-    text-align: center;
-    color: white;
-    border: solid 1px #000;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #2a384a;
-}
-
 
 /* BUISNESS CARDS */
 .card {
@@ -220,13 +196,67 @@ footer .socialMedia {
 
 
 /* INDEX PAGE */
+.home {
+    background-color: rgb(245, 241, 233);
+    /* background-color: var(--tertiary-color); */
+}
+.mainInfo {
+    padding: 10px;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    overflow: hidden;
+}
+.home span {
+    color: var(--text-black-light);
 
+}
+.mainInfo h2 {
+    color: var(--text-black-back);
+    background-color: var(--text-color);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* HERO */
+/* .hero {
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero a {
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #2a384a;
+} */
 /* EVENTS */
 
 /* WEATHER */
+#report {
+    color: var(--text-black-light);
+}
+#currentWeather div {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+}
 
 /* FORECAST */
-
+#forecast {
+    color: var(--text-black-light);
+}
 
 
 

@@ -8,6 +8,9 @@ const forecast = document.querySelector('#forecast');
 const key = "dd13352d8628298ab841d7e562984852"
 const lat = "-31.42"
 const long = "-64.19"
+// const lat = "-31.41967449183622"
+// const long = "-64.18860315826853"
+
 
 // const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}&units=metric`;
 const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${key}&units=metric`;
