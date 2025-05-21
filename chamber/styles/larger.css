@@ -87,13 +87,13 @@ footer section {
   right: 20px;
   bottom: 10px;
   display: block;
-  width: 100px;
   text-align: center;
   color: white;
   border: solid 1px #000;
   border-radius: 5px;
   padding: 10px;
   background-color: #2a384a;
+  font-size: 1.2rem;
 }
 
 

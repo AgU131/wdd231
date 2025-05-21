@@ -219,28 +219,29 @@ footer .socialMedia {
     border-top-right-radius: 8px;
 }
 /* HERO */
-/* .hero {
-    position: relative;
+.hero {
+  position: relative;
 }
 .hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .hero a {
-    text-decoration: none;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    display: block;
-    width: 100px;
-    text-align: center;
-    color: white;
-    border: solid 1px #000;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #2a384a;
-} */
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  color: white;
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #2a384a;
+}
+
 /* EVENTS */
 
 /* WEATHER */
@@ -258,7 +259,43 @@ footer .socialMedia {
     color: var(--text-black-light);
 }
 
-
+/* SPOTLIGTHS */
+.spotlights {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+/* .spotlights div {
+    border: solid 1px rgb(153, 153, 153);
+    width: 100%;
+    border-radius: 10px;
+} */
+.spotlights div {
+    background-color: #eee;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+.spotlights img {
+    width: 60%;
+    height: auto;
+    border-radius: 15%;
+    box-shadow: #7c7c7c 0px 5px 10px;
+    padding: 10px;
+}
+.spotlights h2 {
+    background-color: rgb(190, 226, 190);
+    margin: 0;
+    padding: 0.3rem 0;
+    font-size: 1.2rem;
+}
+.spotlights p {
+    margin: 0;
+    padding: 0.3rem;
+}
 
 
 
