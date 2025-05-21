@@ -14,7 +14,7 @@ async function getMembers() {
 }
 
 
-function memberLeveltoClass(level) {
+function levelToClass(level) {
     if (level === 2) {
       return "★★ Silver Level ★★";
     } else if (level === 3) {
@@ -64,7 +64,7 @@ function showOnPage(member) {
     block.appendChild(link)
 
     const level = document.createElement('p')
-    level.innerHTML = `Member Level: ${memberLeveltoClass(member.level)}`
+    level.innerHTML = `Member Level: ${levelToClass(member.level)}`
     block.appendChild(level)
     
     spotlight.appendChild(block)
