@@ -1,0 +1,71 @@
+// Randomply diplay spotligths for Gold/Silver Members
+
+
+
+const spotlight = document.querySelector('#spotlights');
+
+const path = './data/members.json';
+
+async function getMembers() {
+    const response = await fetch(path);
+    const data = await response.json();
+    const bestMembers = data.members.filter(member => member.level > 1);
+    displayMembers(bestMembers)
+}
+
+
+function memberLeveltoClass(level) {
+    if (level === 2) {
+      return "★★ Silver Level ★★";
+    } else if (level === 3) {
+      return "★★★ Gold Level ★★★";
+    } else {
+        return "Member Level isn't enough";
+    }
+}
+
+getMembers();
+
+const displayMembers = (myArray) => {
+    for (let step = 0; step < 3; step++) {
+    const random = Math.floor(Math.random() * myArray.length);
+
+    let picked = myArray[random];
+    myArray.splice(random, 1);
+
+    showOnPage(picked)
+    }
+}
+
+function showOnPage(member) {
+    const block = document.createElement('div')
+
+    const name= document.createElement('h2')
+    name.innerHTML = member.name
+    block.appendChild(name)
+
+    const logo = document.createElement('img')
+    logo.src = `images/${member.logopath}`
+    logo.alt = member.name
+    block.appendChild(logo)
+
+    const phone = document.createElement('p')
+    phone.innerHTML = member.phone
+    block.appendChild(phone)
+
+    const address = document.createElement('p')
+    address.innerHTML = member.address
+    block.appendChild(address)
+
+    const link = document.createElement('a')
+    link.href = member.url
+    link.textContent="Web Page"
+    link.target = "_blank"
+    block.appendChild(link)
+
+    const level = document.createElement('p')
+    level.innerHTML = `Member Level: ${memberLeveltoClass(member.level)}`
+    block.appendChild(level)
+    
+    spotlight.appendChild(block)
+}
