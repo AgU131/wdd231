@@ -67,7 +67,7 @@ function displayResults(data) {
   report.appendChild(city)
   
   const temp = document.createElement('p')
-  temp.innerHTML = data.list[0].main.temp
+  temp.innerHTML = `${data.list[0].main.temp}&deg;C`
   report.appendChild(temp)
   
   const description = document.createElement('p')
@@ -95,20 +95,41 @@ function displayResults(data) {
   report.appendChild(sunset)
 
 
-  //forecast
-  const dayNames=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-  const d = new Date();
+  // Forecast general
+  const dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+  const date = new Date();
   
-  const temp1 = document.createElement('p')
-  temp1.innerHTML = `${dayNames[d.getDay()]}: ${data.list[0].main.temp}&deg;C`
-  forecast.appendChild(temp1)
+  // Forecast icons
+  const iconsrc2 = `https://openweathermap.org/img/w/${data.list[8].weather[0].icon}.png`;
+  const iconsrc3 = `https://openweathermap.org/img/w/${data.list[16].weather[0].icon}.png`;
+  const icon1 = document.querySelector('#forecast-icon1');
+  const icon2 = document.querySelector('#forecast-icon2');
+  const icon3 = document.querySelector('#forecast-icon3');
+  
+  icon1.setAttribute('src', iconsrc);
+  icon1.setAttribute('alt', desc);
 
+  icon2.setAttribute('src', iconsrc2);
+  icon2.setAttribute('alt', data.list[8].weather[0].main);
+
+  icon3.setAttribute('src', iconsrc3);
+  icon3.setAttribute('alt', data.list[16].weather[0].main);
+  
+  
+  // Forecast Weather
+  const temp1 = document.createElement('p')
+  temp1.innerHTML = `Today: ${data.list[0].main.temp}&deg;C`
+  forecast.appendChild(temp1)
+  // const icon1 = document.createElement('img')
 
   const temp2 = document.createElement('p')
-  temp2.innerHTML = `${dayNames[d.getDay()+1]}: ${data.list[8].main.temp}&deg;C`
+  temp2.innerHTML = `${dayNames[date.getDay()+1]}: ${data.list[8].main.temp}&deg;C`
   forecast.appendChild(temp2)
-
+  // const icon2 = document.createElement('img')
+  
   const temp3 = document.createElement('p')
-  temp3.innerHTML = `${dayNames[d.getDay()+2]}: ${data.list[16].main.temp}&deg;C`
+  temp3.innerHTML = `${dayNames[date.getDay()+2]}: ${data.list[16].main.temp}&deg;C`
   forecast.appendChild(temp3)
+  // const icon3 = document.createElement('img')
+
 }

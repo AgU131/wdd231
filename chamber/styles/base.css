@@ -200,24 +200,39 @@ footer .socialMedia {
     background-color: rgb(245, 241, 233);
     /* background-color: var(--tertiary-color); */
 }
+.home > h1 {
+    padding: 0.7rem;
+}
 .mainInfo {
-    padding: 10px;
+    padding: 2rem;
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     overflow: hidden;
 }
 .home span {
     color: var(--text-black-light);
-
+    
 }
 .mainInfo h2 {
     color: var(--text-black-back);
     background-color: var(--text-color);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    padding: 7px;
+    
 }
+.info {
+    border: solid 1px var(--text-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.info p {
+    margin: 0.2rem;
+}
+
 /* HERO */
 .hero {
   position: relative;
@@ -243,22 +258,41 @@ footer .socialMedia {
 }
 
 /* EVENTS */
-
+#events p {
+    margin: .75rem 10px
+}
 /* WEATHER */
 #report {
     color: var(--text-black-light);
 }
 #currentWeather div {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-
+    display: flex;
+    justify-content: space-evenly;
+}
+#weather-icon {
+    width: 15%;
+    height: auto;
+    filter: drop-shadow(0 0 5px #000);
 }
 
 /* FORECAST */
 #forecast {
     color: var(--text-black-light);
 }
-
+#forecast p {
+    margin: .75rem 10px;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+#fore .forecastdiv img {
+    filter: drop-shadow(0 0 5px #000);
+    display: none;
+    width: 60%;
+    height: auto;
+    /* visibility: hidden; */
+}
 /* SPOTLIGTHS */
 .spotlights {
     display: grid;
