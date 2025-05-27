@@ -36,47 +36,34 @@
             <button id="hamburger-btn" aria-label="Toggle Menu"> &#9776; </button>   <!-- Hamburger button: &#9776;  or  ☰  -->
         </div>
         <nav id="primary-nav">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
             <a href="discover.html">Discover</a>
-            <a href="join.html">Join</a>
+            <a href="join.html" class="active">Join</a>
         </nav>
     </header>
-    <main class="home">
-        <div class="hero">
-            <img src="images/hero1.jpg" alt="Hero image" class="hero_img">
-            <a href="join.html">Join Us</a>
-        </div>
-        
-        <h1>Home</h1>
-        <section class="mainInfo">
-            <div class="info" id="events">
-                <h2>Upcomming Events</h2>
-                <p>Monday 10:00am : Yoga Park for "Mayores"</p>
-                <p>Tuesday 06:00pm : 10 Years Celebration</p>
-                <p>Saturday 5:00pm : Golf Championship for youth ages (16-18)</p>
-            </div>
+    <main class="home" id="join-main">
+        <h1>Join Us</h1>
+        <section class="form-section">
+            <form method="GET" action="thanks.html" class="designOne">
+                <label>First Name <input type="text" name="first-name" requiredautocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last-name" required></label>
+                <label>Title <input type="text" name="title" autocomplete="organization-title" title="Your Title" pattern="[a-zA-Z0-9 -]{7,}"></label>
+                <label>Email <input type="email" name="email" required></label>
+                <label>Phone Number <input type="tel" name="phone" required></label>
+                <label>Organization <input type="text" name="organization" required  title="organization" autocomplete="organization"></label>
 
-            <div class="info" id="currentWeather">
-                <h2 id="city">Today's Weather</h2>
-                <div>
-                    <img id="weather-icon" src="" alt="weather-icon">
-                    <span id="report"></span>
-                </div>
-            </div>
-            
-            <div class="info" id="fore">
-                <h2>Weather Forecast</h2>
-                <div class="forecastdiv">
-                    <img id="forecast-icon1" src="" alt="forecast-icon1">
-                    <img id="forecast-icon2" src="" alt="forecast-icon2">
-                    <img id="forecast-icon3" src="" alt="forecast-icon3">
-                </div>
-                <span id="forecast"></span>
-            </div>
+                <h3>Select Membership</h3>
+                <label><input type="radio" name="level" value="Bronze Membership" checked> Bronze Membership</label>
+                <label><input type="radio" name="level" value="Silver Membership"> Silver Membership</label>
+                <label><input type="radio" name="level" value="Sealing"> Gold Membership</label>
+                <label><input type="radio" name="level" value="Non Profit Membership"> Non Profit Membership</label>
+                
+                <input type="submit" value="Apply for Membership">
+                <input type="hidden" name="hiddendate" id="today">
+        </form>
         </section>
 
-        <section class="spotlights" id="spotlights"></section>
         <dialog id="course-details"></dialog>
     </main>
     <footer>
