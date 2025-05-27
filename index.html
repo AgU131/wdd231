@@ -17,62 +17,64 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dialog.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="profile" id="profile">
-            <img src="images/me.jpg" alt="profile image" class="profile_img">
-            <span>Agustin E. Heredia</span>
-            <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
-        </div>
-        <nav id="primary-nav">
-            <a href="index.html">Home </a>
-            <a href="chamber/directory.html">Chamber</a>
-            <a href="">Final</a>
-            <a href="https://github.com/AgU131">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/agustin-heredia-urb/">LinkedIn</a>
-        </nav>
-    </header>
+<header>
+    <div class="profile" id="profile">
+        <img src="images/me.jpg" alt="profile image" class="profile_img">
+        <span>Agustin E. Heredia</span>
+        <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+    </div>
+    <nav id="primary-nav">
+        <a href="index.html">Home </a>
+        <a href="chamber/directory.html">Chamber</a>
+        <a href="">Final</a>
+        <a href="https://github.com/AgU131">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/agustin-heredia-urb/">LinkedIn</a>
+    </nav>
+</header>
 
-    <main>
-        <h1>Home</h1>
-        <div class="general">
-        <section class="card" id="courseWork">
-            <h2>Course Work</h2>
-            <ul>
-                <li> </li>
-                <li> </li>
-                <li> </li>
-            </ul>
-        </section>
+<main>
+    <h1>Home</h1>
+    <div class="general">
+    <section class="card" id="courseWork">
+        <h2>Course Work</h2>
+        <ul>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ul>
+    </section>
 
-        <section class="card" id="location">
-            <h2>Cordoba, Argentina</h2>
-            <div class="country_info">
-                <figure class="image-caption">
-                    <img src="images/arg_flag.webp" alt="Arg flag image" class="flag_img" id="arg_flag">
-                    <figcaption><em>Official Flag of Argentina</em></figcaption>
-                </figure>
-            </div>
-        </section>
+    <section class="card" id="location">
+        <h2>Cordoba, Argentina</h2>
+        <div class="country_info">
+            <figure class="image-caption">
+                <img src="images/arg_flag.webp" alt="Arg flag image" class="flag_img" id="arg_flag">
+                <figcaption><em>Official Flag of Argentina</em></figcaption>
+            </figure>
         </div>
-        <div>
-        <section class="card" id="certificates">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="resources">
-                <button id="all">All Courses</button>
-                <button id="wdd">WDD Courses</button>
-                <button id="cse">CSE Courses</button>
-            </div>
-            <section id="coursesList"></section>
-            <dialog id="course-details"></dialog>
-        </section>
+    </section>
+    </div>
+    <div>
+    <section class="card" id="certificates">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="resources">
+            <button id="all">All Courses</button>
+            <button id="wdd">WDD Courses</button>
+            <button id="cse">CSE Courses</button>
         </div>
-    </main>
-    <footer>
-        <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
-        <img src="images/arg_flag.webp" alt="Arg flag image" class="flag_img" width="40" height="30">
-        <p id="lastModified"><span id="dateModified"></span></p>
-    </footer>
+        <p id="totalCredits"></p>
+        <section id="coursesList"></section>
+    </section>
+    </div>
+<dialog id="course-details"></dialog>
+</main>
+<footer>
+    <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
+    <img src="images/arg_flag.webp" alt="Arg flag image" class="flag_img" width="40" height="30">
+    <p id="lastModified"><span id="dateModified"></span></p>
+</footer>
 </body>
 </html>
