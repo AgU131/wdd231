@@ -3,28 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Product Review – Agustin Heredia</title>
-    <meta name="description" content="WDD 131 – Product Review Activity - Agustin Heredia - Week 06 Assignment">
+    <title>Timbuktu Chamber of Comerce</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Agustin Heredia - Week 01 Activity creating a personal homepage">
     <meta name="author" content="Agustin Heredia">
-    <link rel="stylesheet" href="styles/form.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/dialog.js" defer></script>
+    
+    <script src="data/members.json" defer></script>
 
-    <script src="scripts/review.js" defer></script>
+    <link rel="icon" href="images/favicon_rounded.ico">
 </head>
 <body>
     <header>
-        <h1>Thank You</h1>   
+        <div class="head">
+            <img src="images/logo_tree_cgpt.png" alt="profile image" class="profile_img" width="75" height="75">
+            <div class="profile" id="profile">
+                <span id="profile_name">Timbuktu</span>
+                <div>Chamber of Commerce</div>
+            </div>
+            <button id="hamburger-btn" aria-label="Toggle Menu"> &#9776; </button>   <!-- Hamburger button: &#9776;  or  ☰  -->
+        </div>
+        <nav id="primary-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html">Join</a>
+        </nav>
     </header>
+    
     <main>
-       <br><h2>Thank you for register, <br>We'll contact you soon!</h2><br>
-        <a href="form.html"class="italic">Send another review</a>      
+        <div id="thanks">
+            <h1>Thank You</h1>  
+            <br><h2>Thank you for register on the chamber of commerce.<br>Here are the details of your application.</h2><br>
+        </div>
+       
+       <div id="results"></div>
+       
+       <a href="index.html" class="italic">Back to home page</a>
     </main>
+
     <footer>
-        <p>&copy; <span id="currentyear"></span> 🧉 Agustin Heredia 🧉 Argentina</p>
-        <p id="lastModified"><span id="dateModified"></span></p>
+    <div>
+        <section class="contact">
+            <span>Timbuktu Chamber of Commerce</span>
+            <p>1234 Main St.</p>
+            <p>Timbuktu, TM 12345</p>
+            <p>chamber@chamber.com</p>
+            <p>(223) 555-5555</p>
+        </section>
+        <section class="socialMedia">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/fb_icon_ligth.png" alt="Facebook icon" class="social_icon" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/ig_icon.png" alt="Instagram icon" class="social_icon" width="40" height="40">
+            </a>
+            <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/xtw_icon.png" alt="X icon" class="social_icon" width="40" height="40">
+            </a>
+        </section>
+        <section class="myInfo">
+            <p>WDD231 Class Proyect</p>
+            <p>🧉 Agustin Heredia 🧉 Argentina</p>
+            <p><span id="copywrite"></span></p>
+            <p id="lastModified"></p>
+        </section>
+    </div>
     </footer>
 </body>
 </html>
