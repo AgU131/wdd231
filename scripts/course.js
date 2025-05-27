@@ -10,7 +10,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -23,7 +23,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -35,7 +35,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -61,7 +61,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -111,7 +111,14 @@ function displayCourses(filteredcourses) {
         default:
             courseCard.className = "needed"
       }
-  
+
+
+        // This is added for the DIALOG
+        courseCard.addEventListener("click", () => {
+            displayCourseDetails(crs);
+        });
+        // end adding for DIALOG
+        
       courseCard.innerHTML=`${crs.subject} ${crs.number}`
 
       courseout.appendChild(courseCard)
@@ -121,7 +128,7 @@ function displayCourses(filteredcourses) {
     // https://www.freecodecamp.org/news/how-to-use-javascript-array-reduce-method/
     let totalCredits = filteredcourses.reduce((acc, course) => acc + course.credits, 0);
     //console.log(totalCredits)
-    document.querySelector('#totalCredits').innerHTML = `The total number points of the courses  listed above is ${totalCredits}`
+    document.querySelector('#totalCredits').innerHTML = `The total number points of the courses listed is ${totalCredits}`
 }
 
 displayCourses(courses)
