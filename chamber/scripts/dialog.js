@@ -1,11 +1,11 @@
 // WEEK 4 ACTIVITY DIALOG
-const courseDetails = document.querySelector("#course-details")
+const membershipDetails = document.querySelector("#membership-details")
 // const closeModal = document.querySelector("#closeModal");
 const courseDiv = document.querySelector("#coursesList div"); 
 
-function displayCourseDetails(course) {
-  courseDetails.innerHTML = '';
-  courseDetails.innerHTML = `
+function displaymembershipDetails(course) {
+  membershipDetails.innerHTML = '';
+  membershipDetails.innerHTML = `
     <button id="closeModal">X</button>
     <h2>${course.subject} ${course.number}</h2>
     <h3>${course.title}</h3>
@@ -14,7 +14,8 @@ function displayCourseDetails(course) {
     <p>${course.description}</p>
     <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
   `;
-  courseDetails.showModal();
+  membershipDetails.showModal();
 
-  closeModal.addEventListener("click", () => courseDetails.close())
+  closeModal.addEventListener("click", () => membershipDetails.close())
 }
+
