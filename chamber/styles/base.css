@@ -334,7 +334,12 @@ footer .socialMedia {
 
 
 /*           JOIN PAGE           */
-
+.join {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* align-items: center; /* esto alinea los itemns de arriba hacia abajo */
+}
 /*            DIALOG           */
 dialog {
   border: 1px solid rgb(0 0 0 / 10%);

@@ -47,6 +47,7 @@ document. addEventListener ('DOMContentLoaded', () => {
         default:
           myLevel.textContent="Level is Not for Profit"
       }
+
       
       const mySection = document.createElement('section')
       // Sugerencias de Copilot (lo de agregarle una class)    const mySection = document.createElement('section');
