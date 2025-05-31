@@ -1,16 +1,17 @@
-// WEEK 4 ACTIVITY DIALOG
-const membershipmodal = document.querySelector("#membershipModal")
+// WEEK 4 ACTIVITY DIALOG JS
+const membershipModal = document.querySelector("#membershipModal")
 const closeModal = document.querySelector("#closeModal");
 const modalTitle = document.querySelector("#modalTitle");
 const modalDetails = document.querySelector("#modalDetails");
 
-closeModal.addEventListener("click", () => membershipDetails.close())
+// Function to close the modal
+closeModal.addEventListener("click", () => membershipModal.close())
 
 const level1Btn = document.querySelector('#level1Btn');
 level1Btn.addEventListener('click', () => {
     modalTitle.innerHTML = "Non Profit Membership"
     modalDetails.innerHTML = `<p>Benefits include:</p>
-    <ul>${item.name}</ul>
+    <ul>aa</ul>
     <p>COST: Free</p>
     `
     membershipModal.showModal();
