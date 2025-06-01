@@ -405,6 +405,10 @@ form.formPart {
 .formPart input:required:valid {
     border-left-color: rgb(15, 97, 15);
 }
+.levelChoice {
+    align-items: center;
+}
+
 
 /*            DIALOG           */
 dialog {
@@ -436,3 +440,4 @@ dialog {
     padding: 10px;
     width: 40%;
 }
+
