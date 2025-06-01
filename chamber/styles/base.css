@@ -497,7 +497,14 @@ dialog {
 }
 
 /*            THANK YOU PAGE           */
-#thanks, #results {
+.thankYou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+#thanks {
     display: flex;
     flex-direction: column;
     align-items: center;
