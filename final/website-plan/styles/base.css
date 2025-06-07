@@ -45,6 +45,18 @@ a:hover {
   color: #008080;
 }
 
+/* IMAGES */
+img {
+  max-width: 60%;
+  max-height: 20%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#mobile-img {
+    max-width: 35%;
+}
+
 /* Botones de llamada a la acción */
 /* .button, button {
   background-color: #f9a825;
