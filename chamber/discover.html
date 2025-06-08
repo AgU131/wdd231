@@ -20,18 +20,23 @@
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/spotlights.js" defer></script>
     <script src="scripts/dialog.js" defer></script>
+    <script src="scripts/counter.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
     
     <script src="data/members.json" defer></script>
+    <script src="data/places.mjs" defer></script>
 
     <link rel="icon" href="images/favicon_rounded.ico">
 </head>
 <body>
     <header>
         <div class="head">
-            <img src="images/logo_tree_cgpt.png" alt="profile image" class="profile_img" width="75" height="75">
-            <div class="profile" id="profile">
-                <span id="profile_name">Timbuktu</span>
-                <div>Chamber of Commerce</div>
+            <div>
+                <img src="images/logo_tree_cgpt.png" alt="profile image" class="profile_img" width="75" height="75">
+                <div class="profile" id="profile">
+                    <span id="profile_name">Timbuktu</span>
+                    <div>Chamber of Commerce</div>
+                </div>
             </div>
             <button id="hamburger-btn" aria-label="Toggle Menu"> &#9776; </button>
         </div>
@@ -43,9 +48,13 @@
         </nav>
     </header>
 
-    <main class="home" id="">
-        <h1>a</h1>
-        
+    <main class="discover">
+        <h1>Discover</h1>
+        <div>
+            <h2>I am Watching</h2>
+            <p id="timeBetween"></p>
+        </div>
+        <section id="allplaces"></section>
     </main>
     
     <footer>

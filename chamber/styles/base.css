@@ -511,3 +511,56 @@ dialog {
     justify-content: center;
     padding: 2rem;
 }
+
+
+
+/*            DISCOVER PAGE           */
+#allplaces div {
+    margin: 1rem 8px;
+    padding: 10px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    
+    /* justify-items: center; */
+    width: 95%;
+    
+    display: grid;
+    gap:10px;
+    grid-template-areas: 
+    "name" 
+    "photograph"
+    "description"
+    "cost"
+    "location"
+    "button"
+}
+#allplaces div h2 {
+    margin: 1rem 0px;
+    grid-area: name;
+}
+#allplaces div img {
+    width: 100%;
+    grid-area: photograph;
+}
+#allplaces div p {
+    margin: 1rem 0px;
+    grid-area: description;
+}
+#allplaces div address {
+    margin: 1rem 0px;
+    grid-area: location;
+}
+#allplaces div button {
+    margin: 1rem 0px;
+    background-color: #d4295f;
+    color: #eee;
+    border:none;
+    border-radius: 30px;
+    padding: 1rem;
+    grid-area: button;
+}
+#allplaces div button:hover {
+    background-color: #f0a3b1;
+}

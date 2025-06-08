@@ -56,8 +56,8 @@ footer section {
   align-items: center;
 }
 /* footer .myInfo {
-    align-items: left;
-    justify-content: left;
+  align-items: left;
+  justify-content: left;
 } */
 
 
@@ -133,17 +133,26 @@ footer section {
 
 /*           JOIN PAGE           */
 .join {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    /* align-items: center; /* esto alinea los itemns de arriba hacia abajo */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* align-items: center; /* esto alinea los itemns de arriba hacia abajo */
 }
 /*            DIALOG           */
 
 
-
-
-
+/*            DISCOVER PAGE           */
+.discover {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+ #allplaces {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
 
 
