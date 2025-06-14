@@ -1,0 +1,46 @@
+{
+    "staffProfiles": [
+        {
+            "name": "John Doe",
+            "title": "CEO and Founder",
+            "division": "Executive",
+            "email": "a@a.com",
+            "profile_picture": ""
+        },
+        {
+            "name": "John Doe2",
+            "title": "3D Printing Specialist and Professional Designer",
+            "division": "Printing",
+            "email": "a@a.com",
+            "profile_picture": ""
+        },
+        {
+            "name": "John Doe3",
+            "title": "Professional 3D Designer Analist",
+            "division": "Design",
+            "email": "a@a.com",
+            "profile_picture": ""
+        },
+        {
+            "name": "John Doe4",
+            "title": "Technic 3D Printers Analist",
+            "division": "Repairs",
+            "email": "a@a.com",
+            "profile_picture": ""
+        },
+        {
+            "name": "John Doe5",
+            "title": "Customer Service Specialist",
+            "division": "Sales",
+            "email": "a@a.com",
+            "profile_picture": ""
+        }
+        {
+            "name": "John Doe5",
+            "title": "Marketing Specialist and Social Media Manager",
+            "division": "Marketing",
+            "email": "a@a.com",
+            "profile_picture": ""
+        }
+    ]
+}
