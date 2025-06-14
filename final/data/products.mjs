@@ -15,7 +15,7 @@ export const products = [
       "filaments_slots": 1
     },
     "price": 134,
-    "image": "BambulabA1M.webp"
+    "image": "./images/products/BambulabA1M.webp"
   },
   {
     "name": "Bambulab P1S",
@@ -33,7 +33,7 @@ export const products = [
     "filaments_slots": 1
     },
     "price": 299,
-    "image": "BambulabP1S.webp"
+    "image": "./images/products/BambulabP1S.webp"
   },
   {
     "name": "Hellbot Magna 2 230",
@@ -51,7 +51,7 @@ export const products = [
       "filaments_slots": 2
     },
     "price": 399,
-    "image": "HellbotMagna2230.webp"
+    "image": "./images/products/HellbotMagna2230.jpg"
   },
   {
     "name": "Creality Ender3",
@@ -69,7 +69,7 @@ export const products = [
       "filaments_slots": 1
     },
     "price": 279,
-    "image": "CrealityEnder3.webp"
+    "image": "./images/products/CrealityEnder3.webp"
   },
   {
     "name": "Filament Printalot Pla",
@@ -83,7 +83,7 @@ export const products = [
       "weight": "1 kg"
     },
     "price": 29,
-    "image": "PrintalotPlaBlack.webp"
+    "image": "./images/products/PrintalotPlaBlack.webp"
   },
   {
     "name": "Filament Hellbot Ecofila Pla",
@@ -96,8 +96,8 @@ export const products = [
       "filament_types": "PLA",
       "weight": "1 kg"
     },
-    "price": 29,
-    "image": "PrintalotPlaBlack.webp"
+    "price": 31,
+    "image": "./images/products/HellbotPlaBlack.webp"
   },
   {
     "name": "Filament Printalot PLA",
@@ -111,7 +111,7 @@ export const products = [
     "weight": "1 kg"
     },
     "price": 29,
-    "image": "HellbotPlaBlack.webp"
+    "image": "./images/products/PrintalotPlaRed.webp"
   },
   {
     "name": "Filament Hellbot Ecofila Pla",
@@ -124,8 +124,8 @@ export const products = [
       "filament_types": "PLA",
       "weight": "1 kg"
     },
-    "price": 29,
-    "image": "HellbotPlaYellow.webp"
+    "price": 31,
+    "image": "./images/products/HellbotPlaYellow.webp"
   },
   {
     "name": "Kit x5 Nozzle Hellbot",
@@ -140,7 +140,7 @@ export const products = [
       "compatible_with": "Ender 3 and Ender Hotend Mk8",
     },
     "price": 2.9,
-    "image": "HellbotNozzleX5.webp"
+    "image": "./images/products/HellbotNozzleX5.webp"
   },
   {
     "name": "Kit x7 Nozzle Ender 3",
@@ -155,7 +155,7 @@ export const products = [
       "compatible_with": "Ender 3 and Ender Hotend Mk8",
     },
     "price": 4.9,
-    "image": "EnderNozzleX7.webp"
+    "image": "./images/products/EnderNozzleX7.webp"
   },
   {
     "name": "Magnetic Bed Creality Ender",
@@ -169,7 +169,7 @@ export const products = [
       "compatible_with": "CR-10S PRO, CR-10 V2, CR-10 V3, CR-X, CR-X Pro, CR-10S PRO V2, Ender-3 max.",
     },
     "price": 39.5,
-    "image": "CrealityBedEnder.webp"
+    "image": "./images/products/CrealityBedEnder.webp"
   },
   {
     "name": "Bed Anet A8",
@@ -183,6 +183,6 @@ export const products = [
       "compatible_with": "Anet A8 and +",
     },
     "price": 39.5,
-    "image": "AnetBedA8.webp"
+    "image": "./images/products/AnetBedA8.webp"
   }
 ]
