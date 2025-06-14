@@ -563,4 +563,6 @@ dialog {
 }
 #allplaces div button:hover {
     background-color: #f0a3b1;
+    color:black;
+    cursor: pointer;
 }
