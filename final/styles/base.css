@@ -23,6 +23,11 @@ Icons / Visual Accents: #00D5A0 – used for icons or interactive visual element
 */
 
 /*              ALL            */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 main {
     display: grid;
     grid-template-rows: 1fr;
@@ -207,6 +212,34 @@ footer .socialMedia {
 
 
 /*          INDEX PAGE           */
+/*  SLIDER  */
+.slider-container {
+    width: 50%;
+    overflow: hidden;
+    position: relative; /* Necesario para el posicionamiento absoluto del slider */
+}
+.slider {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Ajusta la duración y el tipo de animación */
+    width: fit-content; /* Importante para que el slider contenga todas las imágenes */
+}
+.slider img {
+    width: 200px; /* Ajusta el ancho de las imágenes */
+    height: auto;
+    margin-right: 10px; /* Espacio entre imágenes */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para las imágenes */
+}
+@keyframes scroll {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(calc(-100% / 2)); /* Desplaza la mitad del ancho del contenedor */
+    }
+}
+
+
 .home {
     background-color: rgb(245, 241, 233);
     /* background-color: var(--tertiary-color); */
@@ -252,6 +285,7 @@ footer .socialMedia {
   width: 100%;
   height: auto;
   display: block;
+  opacity: 0.7; /*  70% de opacidad, 30% de transparencia */
 }
 .hero a {
   text-decoration: none;
@@ -261,11 +295,12 @@ footer .socialMedia {
   display: block;
   width: 100px;
   text-align: center;
-  color: white;
-  border: solid 1px #000;
+  font-weight: bold;
+  color: white;  /*black*/
+  border: solid 1px black;
   border-radius: 5px;
   padding: 10px;
-  background-color: #2a384a;
+  background-color: #2a384a;  /*var(--accent-color)*/
 }
 
 /*          EVENTS           */
