@@ -1,0 +1,226 @@
+@media (min-width: 768px) {
+/* DIRECTORY */
+/*  HEADER  */
+header {
+  background-color: var(--primary-color);
+}
+
+
+
+/* NAV */
+#primary-nav {
+  max-height: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--primary-color);  /*#2a384a*/
+  justify-content: space-around;
+  border-top: #3c5f3b 0.1px solid;
+}
+#primary-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+#primary-nav a:hover {
+  text-decoration: overline;
+  color:#fdff9a;
+  /* color:var(--text-light-black); */
+  background-color: transparent;
+}
+/*  HAMBURGER MENU  */
+#hamburger-btn {
+  display: none;
+}
+
+
+
+/* MAIN */
+/* HERO */
+.hero a {
+  width: 150px;
+}
+
+
+
+/*  FOOTER  */
+footer div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  padding: 1.5rem;
+}
+footer section {
+  justify-content: center;
+  align-items: center;
+}
+/* footer .myInfo {
+  align-items: left;
+  justify-content: left;
+} */
+
+
+
+
+/* INDEX PAGE */
+.home {
+  background-color: rgb(245, 241, 233);
+  /* background-color: var(--tertiary-color); */
+}
+.mainInfo {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.mainInfo h2 {
+  padding: 10px;
+  text-align: center;
+}
+/* HERO */
+.hero a {
+  width: 14%;
+  right: 25px;
+  font-size: 1.2rem;
+}
+
+/* WEATHER */
+#report p {
+  display: flex;
+  justify-content: flex-start;
+}
+#weather-icon {
+  width: 30%;
+  height: auto;
+}
+
+/* FORECAST */
+#fore img, span {
+  padding-left: 10px;
+}
+#fore .forecastdiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+#fore .forecastdiv img {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+}
+#forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/* SPOTLIGTHS */
+.spotlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+.spotlights img {
+  width: 70%;
+}
+
+
+/*           JOIN PAGE           */
+.join {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* align-items: center; /* esto alinea los itemns de arriba hacia abajo */
+}
+/*            DIALOG           */
+
+
+/*            DISCOVER PAGE           */
+.discover {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+#allplaces {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+#allplaces img:hover {
+  transform: scale(1.05);
+  background-color: grey;
+  border-radius: 5px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+  /* box-shadow: inset 0 0 10px rgba(0,0,0,0.5); */
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+/* AI sugestions */
+
+/* 
+:root {
+  --verde-hoja: #3A7F49;
+  --verde-claro: #A4D7A2;
+  --arena-claro: #F2E5C4;
+  --amarillo-sol: #F9A825;
+  --marron-oscuro: #3B2F2F;
+  --negro-suave: #1E1E1E;
+  --blanco: #FFFFFF;
+}
+
+body {
+  background-color: var(--arena-claro);
+  color: var(--negro-suave);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--verde-hoja);
+  color: var(--blanco);
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--amarillo-sol);
+}
+
+button.primary {
+  background-color: var(--amarillo-sol);
+  color: var(--negro-suave);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.primary:hover {
+  background-color: var(--verde-hoja);
+  color: var(--blanco);
+}
+
+footer {
+  background-color: var(--marron-oscuro);
+  color: var(--blanco);
+  padding: 2rem;
+  text-align: center;
+} 
+*/

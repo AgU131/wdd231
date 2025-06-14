@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 – Agustin Heredia</title>
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Agustin Heredia - Week 01 Activity creating a personal homepage">
+    <title>3DenMente - Official Page</title>
+    <meta name="description" content="Final Proyect 3DenMente printings shop page">
     <meta name="author" content="Agustin Heredia">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/small.css">
 
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="3DenMente">
+    <meta property="og:description" content="3DenMente discovery page">
+    <meta property="og:url" content="https://agu131.github.io/wdd231/final">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://agu131.github.io/wdd231/final/images/hero.webp" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WDD231 3DenMente Final Proyect Activity - by Agustin Heredia">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
-
     
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dialog.js" defer></script>
+    
+    <script src="data/members.json" defer></script>
 </head>
 <body>
 <header>
     <div class="profile" id="profile">
-        <img src="images/me.jpg" alt="profile image" class="profile_img">
-        <span>Agustin E. Heredia</span>
+        <img src="images/logo.webp" alt="Logo image" class="profile_img">
+        <span>3D en Mente</span>
         <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
     </div>
     <nav id="primary-nav">
@@ -49,13 +61,13 @@
         </section>
         <section class="socialMedia">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                <img src="images/fb_icon_ligth.png" alt="Facebook icon" class="social_icon" width="40" height="40">
+                <img src="images/fb_icon.png" alt="Facebook icon" class="social_icon" width="40" height="40">
             </a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                 <img src="images/ig_icon.png" alt="Instagram icon" class="social_icon" width="40" height="40">
             </a>
-            <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer">
-                <img src="images/xtw_icon.png" alt="X icon" class="social_icon" width="40" height="40">
+            <a href="https://wa.me/+5493525453770" target="_blank" rel="noopener noreferrer">
+                <img src="images/wsp_icon.png" alt="Whatsapp icon" class="social_icon" width="40" height="40">
             </a>
         </section>
         <section class="myInfo">
