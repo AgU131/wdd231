@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-    <title>Slider de Imágenes con Flechas</title>
-    <link rel="stylesheet" href="styles/fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DenMente - Official Page</title>
+    <meta name="description" content="Final Proyect 3DenMente printings shop page">
+    <meta name="author" content="Agustin Heredia">
+    <meta name="theme-color" content="#100945">
+
+    <meta property="og:title" content="3DenMente">
+    <meta property="og:description" content="3DenMente Home page">
+    <meta property="og:url" content="https://agu131.github.io/wdd231/final">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://agu131.github.io/wdd231/final/images/hero.webp" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WDD231 3DenMente Final Proyect Activity - by Agustin Heredia">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dialog.js" defer></script>
+    <script src="scripts/home_page.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
 </head>
 <body>
+    <header>
 
-    Hola
-    <div class="image-slider">
-        <button class="arrow left-arrow" onclick="changeImage(-1)">&#10094;</button>
-        <img id="sliderImage" src="images/hero1.webp" alt="Imagen 1">
-        <img id="sliderImage" src="images/hero2.jpg" alt="Imagen 2">
-        <button class="arrow right-arrow" onclick="changeImage(1)">&#10095;</button>
-    </div>
-    <script src="scripts/proyects.js"></script>
+    </header>
+    <main>
+        <h1>Our Proyect</h1>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="images/printers1.jpg"  alt="Image 1">
+                <img src="images/printers2.webp" alt="Image 2">
+                <img src="images/printers3.jpg"  alt="Image 3">
+                <img src="images/printers4.webp" alt="Image 4">
+                <img src="images/printers5.jpg"  alt="Image 5">
+                <img src="images/printers6.jpg"  alt="Image 6">
+                <img src="images/printers7.webp" alt="Image 7">
+                <img src="images/printers.webp"  alt="Image Extra">
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

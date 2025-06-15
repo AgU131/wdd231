@@ -1,102 +1,98 @@
 @media (min-width: 768px) {
-/* DIRECTORY */
-/*  HEADER  */
-header {
-  background-color: var(--primary-color);
+  /* DIRECTORY */
+  /*  HEADER  */
+  header {
+    background-color: var(--primary-color);
+  }
+
+
+
+  /* NAV */
+  #primary-nav {
+    max-height: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary-color);  /*#2a384a*/
+    justify-content: space-around;
+    border-top: #3c5f3b 0.1px solid;
+  }
+  #primary-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+  #primary-nav a:hover {
+    text-decoration: overline;
+    color: var(--accent-color);
+    /* color:var(--text-light-black); */
+    background-color: transparent;
+  }
+  /*  HAMBURGER MENU  */
+  #hamburger-btn {
+    display: none;
+  }
+
+
+
+  /* MAIN */
+
+
+
+  /*  FOOTER  */
+  footer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    padding: 1.5rem;
+  }
+  footer section {
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  /* INDEX PAGE */
+  .home {
+    background-color: rgb(245, 241, 233);
+    /* background-color: var(--tertiary-color); */
+  }
+  /* HERO */
+  .hero-slider a {
+    width: 150px;
+    right: 25px;
+    font-size: 1.2rem;
+  }
+
+  /*           JOIN PAGE           */
+  .join {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  /*            DIALOG           */
+
+
+  /*            DISCOVER PAGE           */
+  .discover {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  #allplaces {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  #allplaces img:hover {
+    transform: scale(1.05);
+    background-color: grey;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease-in-out;
+  }
 }
 
-
-
-/* NAV */
-#primary-nav {
-  max-height: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: var(--primary-color);  /*#2a384a*/
-  justify-content: space-around;
-  border-top: #3c5f3b 0.1px solid;
-}
-#primary-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-}
-#primary-nav a:hover {
-  text-decoration: overline;
-  color:#fdff9a;
-  /* color:var(--text-light-black); */
-  background-color: transparent;
-}
-/*  HAMBURGER MENU  */
-#hamburger-btn {
-  display: none;
-}
-
-
-
-/* MAIN */
-
-
-
-/*  FOOTER  */
-footer div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  padding: 1.5rem;
-}
-footer section {
-  justify-content: center;
-  align-items: center;
-}
-/* footer .myInfo {
-  align-items: left;
-  justify-content: left;
-} */
-
-
-
-
-/* INDEX PAGE */
-.home {
-  background-color: rgb(245, 241, 233);
-  /* background-color: var(--tertiary-color); */
-}
-/* HERO */
-.hero-slider a {
-  width: 150px;
-  right: 25px;
-  font-size: 1.2rem;
-}
-
-/*           JOIN PAGE           */
-.join {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-/*            DIALOG           */
-
-
-/*            DISCOVER PAGE           */
-.discover {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 20px;
-}
-#allplaces {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-#allplaces img:hover {
-  transform: scale(1.05);
-  background-color: grey;
-  border-radius: 5px;
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
-  transition: transform 0.3s ease-in-out;
-}
-}

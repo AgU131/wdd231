@@ -25,4 +25,7 @@ h1, h2, h3 {
     font-weight: 500;
     color: var(--text-ligth-back);
 }
+img {
+    width: 100%;
+}
     
