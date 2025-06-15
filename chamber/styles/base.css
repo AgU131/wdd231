@@ -104,7 +104,7 @@ header .head #profile {
     padding: 0.5rem;
 }
 #hamburger-btn:hover {
-    color: var(--accent-color2);
+    color: var(--accent-color);
 }
 
 
@@ -178,7 +178,7 @@ footer p, span {
     font-size: 0.9em;
 }
 #lastModified {
-    color: var(--accent-color2);
+    /* color: var(--accent-color); */
     font-size: 0.8em;
     font-family: "Open Sans", sans-serif;
     font-weight: 100;
@@ -208,10 +208,9 @@ footer .socialMedia {
     gap: 10px;
     overflow: hidden;
 }
-.home span {
-    color: var(--text-black-light);
-    
-}
+/* .home span {
+    color: var(--text-black-light); 
+} */
 .mainInfo h2 {
     color: var(--text-black-back);
     background-color: var(--text-color);
@@ -260,9 +259,9 @@ footer .socialMedia {
     margin: .75rem 10px
 }
 /*          WEATHER          */
-#report {
+/* #report {
     color: var(--text-black-light);
-}
+} */
 #currentWeather div {
     display: flex;
     justify-content: space-evenly;
@@ -274,9 +273,9 @@ footer .socialMedia {
 }
 
 /*          FORECAST             */
-#forecast {
-    color: var(--text-black-light);
-}
+/* #forecast {
+    color: var(--text-black-ligh);
+} */
 #forecast p {
     margin: .75rem 10px;
     display: flex;
@@ -402,7 +401,7 @@ form.formPart {
     padding: .75rem 1.5rem;
     margin: 2rem 0;
     font-size: 1.2rem;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none;     no se que es esto pero ahi quedo*/
     appearance: none;
     animation: changeColors 2s infinite alternate linear;
 }
