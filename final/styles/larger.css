@@ -39,7 +39,7 @@ header {
 
 /* MAIN */
 /* HERO */
-.hero a {
+.hero-slider a {
   width: 150px;
 }
 
@@ -79,7 +79,7 @@ footer section {
   text-align: center;
 }
 /* HERO */
-.hero a {
+.hero-slider a {
   width: 14%;
   right: 25px;
   font-size: 1.2rem;

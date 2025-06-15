@@ -10,39 +10,3 @@
   font-style: normal;
 }
  */
-.image-slider {
-    position: relative;
-    width: 500px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.image-slider img {
-    width: 100%;
-    display: none; /* Oculta todas las imágenes por defecto */
-}
-
-.image-slider img.active {
-    display: block; /* Muestra la imagen activa */
-}
-
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2em;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 2; /* Asegura que las flechas estén por encima de la imagen */
-}
-
-.left-arrow {
-    left: 10px;
-}
-
-.right-arrow {
-    right: 10px;
-}

@@ -6,6 +6,7 @@
     <title>3DenMente - Official Page</title>
     <meta name="description" content="Final Proyect 3DenMente printings shop page">
     <meta name="author" content="Agustin Heredia">
+    <meta name="theme-color" content="#100945">
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -37,7 +38,7 @@
     <section>
         <div class="head">
             <div class="profile" id="profile">
-                <img src="images/logo.webp" alt="Logo image" class="logo-img" width="75" height="75">
+                <img src="images/logo_and_icons/logo.webp" alt="Logo image" class="logo-img" width="75" height="75">
                 <span>3D en Mente</span>
             </div>
             <button id="hamburger-btn" aria-label="Toggle Menu"> &#9776; </button>
@@ -52,19 +53,26 @@
 </header>
 
 <main class="home">
-    <div class="hero">
-            <img src="images/hero1.webp" alt="Hero image" class="hero_img">
-            <a href="contactus.html">Contact Us!</a>
-        </div>
+    <div class="hero-slider">
+        <button class="arrow left-arrow" onclick="changeImage(-1)">&#10094;</button>
+        <img id="sliderImage" src="images/hero1.webp" alt="Hero Image 1" class="hero_img">
+        <img id="sliderImage" src="images/hero2.webp" alt="Hero Image 2" class="hero_img">
+        <img id="sliderImage" src="images/hero3.jpeg" alt="Hero Image 3" class="hero_img">
+        <img id="sliderImage" src="images/hero4.jpg" alt="Hero Image 4" class="hero_img">
+        <a href="contactus.html">Contact Us!</a>
+        <button class="arrow right-arrow" onclick="changeImage(1)">&#10095;</button>
+    </div>
+    
     <div class="slider-container">
       <div class="slider">
-        <img src="images/printers.webp" alt="Imagen 1">
-        <img src="images/mqdefault.jpg" alt="Imagen 2">
-        <img src="imagen3.jpg" alt="Imagen 3">
-        <!--  Repite las imágenes según sea necesario para el efecto infinito -->
-        <img src="imagen1.jpg" alt="Imagen 1 (copia)">
-        <img src="imagen2.jpg" alt="Imagen 2 (copia)">
-        <img src="imagen3.jpg" alt="Imagen 3 (copia)">
+        <img src="images/printers1.jpg"  alt="Imagen 1">
+        <img src="images/printers2.webp" alt="Imagen 2">
+        <img src="images/printers3.jpg"  alt="Imagen 3">
+        <img src="images/printers4.webp" alt="Imagen 4">
+        <img src="images/printers5.jpg"  alt="Imagen 5">
+        <img src="images/printers6.jpg"  alt="Imagen 6">
+        <img src="images/printers7.webp"  alt="Imagen ">
+        <img src="images/printers.webp"  alt="Imagen Extra">
       </div>
     </div>
     <h1>We offer You</h1>
@@ -83,13 +91,13 @@
         </section>
         <section class="socialMedia">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                <img src="images/fb_icon.png" alt="Facebook icon" class="social_icon" width="40" height="40">
+                <img src="images/logo_and_icons/fb_icon.png" alt="Facebook icon" class="social_icon" width="40" height="40">
             </a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <img src="images/ig_icon.png" alt="Instagram icon" class="social_icon" width="40" height="40">
+                <img src="images/logo_and_icons/ig_icon.png" alt="Instagram icon" class="social_icon" width="40" height="40">
             </a>
             <a href="https://wa.me/+5493525453770" target="_blank" rel="noopener noreferrer">
-                <img src="images/wsp_icon.png" alt="Whatsapp icon" class="social_icon" width="40" height="40">
+                <img src="images/logo_and_icons/wsp_icon.png" alt="Whatsapp icon" class="social_icon" width="40" height="40">
             </a>
         </section>
         <section class="myInfo">
