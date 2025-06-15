@@ -21,26 +21,6 @@ Links / Buttons: #00B7FF (default), #008080 (hover).
 Headings: #F5F5F5 or #FFFFFF – depending on background contrast.
 Icons / Visual Accents: #00D5A0 – used for icons or interactive visual elements.
 */
-
-/*              ALL            */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-main {
-    display: grid;
-    grid-template-rows: 1fr;
-}
-.resources {
-    grid-template-columns: 1fr;
-}
-p {
-    font-family: "Roboto", serif;
-    font-weight: 400;
-}
-    
-
 /*          HEADER        */
 header div {
     background-color: var(--primary-color);
@@ -49,7 +29,6 @@ header div {
     justify-content: left;
 }
 .head {
-    
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
@@ -69,7 +48,7 @@ header span {
 }
 header .head #profile {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: var(--text-black-back);
 }
 /*          NAV          */
@@ -91,7 +70,7 @@ header .head #profile {
     color: white;
     margin: 5px 0;
     font-size: 1.2em;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
 #primary-nav a:hover {
