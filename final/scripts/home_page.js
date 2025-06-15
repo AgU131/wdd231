@@ -40,3 +40,25 @@ function changeImage(direction) {
 // Mostrar la primera imagen al cargar la página
 showImage(currentImageIndex);
 
+
+
+
+/*
+Creado por la IA (slider):
+<script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.hero_img');
+
+        function changeImage(direction) {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + direction + images.length) % images.length;
+            images[currentIndex].style.display = 'block';
+        }
+
+        // Inicializar el slider mostrando la primera imagen
+        images.forEach((img, index) => {
+            img.style.display = index === 0 ? 'block' : 'none';
+        });
+    </script>
+
+*/
