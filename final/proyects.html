@@ -33,9 +33,24 @@
     <script src="scripts/slider.js" defer></script>
 </head>
 <body>
-    <header>
+<header>
+    <div>
+        <section class="head">
+            <div class="profile" id="profile">
+                <a href="index.html"><img src="images/logo_and_icons/logo.webp" alt="Logo image" class="logo-img" width="75" height="75"></a>
+                <h1>3D en Mente</h1>
+            </div>
+            <button id="hamburger-btn" aria-label="Toggle Menu"> &#9776; </button>
+        </section>
+        <nav id="primary-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="proyects.html">Our Proyects</a>
+        </nav>
+    </div>
+</header>
 
-    </header>
     <main>
         <h1>Our Proyect</h1>
         <div class="slider-container">
@@ -52,8 +67,33 @@
         </div>
         
     </main>
-    <footer>
+</body>
 
-    </footer>
+<footer>
+    <div>
+        <section class="contact">
+            <span>3D en Mente</span>
+            <p>Cordoba, Argentina</p>
+            <p>3denmente@gmail.com</p>
+            <p>(+54) 9 3525 453-770</p>
+        </section>
+        <section class="socialMedia">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/logo_and_icons/fb_icon.png" alt="Facebook icon" class="social_icon" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/3denmente/" target="_blank" rel="noopener noreferrer">
+                <img src="images/logo_and_icons/ig_icon.png" alt="Instagram icon" class="social_icon" width="40" height="40">
+            </a>
+            <a href="https://wa.me/+5493525453770" target="_blank" rel="noopener noreferrer">
+                <img src="images/logo_and_icons/wsp_icon.png" alt="Whatsapp icon" class="social_icon" width="40" height="40">
+            </a>
+        </section>
+        <section class="myInfo">
+            <p>🧉 Agustin Heredia 🧉 Argentina</p>
+            <p><span id="copywrite"></span></p>
+            <p id="lastModified"></p>
+        </section>
+    </div>
+</footer>
 </body>
 </html>
