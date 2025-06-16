@@ -60,6 +60,9 @@
     /* background-color: var(--tertiary-color); */
   }
   /* HERO */
+  .hero-slider img {
+    height: 400px;
+  }
   .hero-slider a {
     width: 150px;
     right: 25px;
@@ -72,7 +75,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  /*            DIALOG           */
 
 
   /*            DISCOVER PAGE           */

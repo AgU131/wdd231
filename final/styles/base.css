@@ -31,12 +31,11 @@ Icons / Visual Accents: #00D5A0 – used for icons or interactive visual element
 /******************  HEADER  ******************/
 header div {
     background-color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    align-items: center;  /*aligns the title vertically*/
 }
 .head {
     justify-content: space-between;
+    display: flex;
     align-items: center;
     padding: 1rem 2rem;
 }
@@ -46,7 +45,7 @@ header img {
     height: 100px;
     padding: 15px 10px;
 }
-header span {
+header h1 {
     font-family: "Orbitron", sans-serif;
     font-size: 2rem;
     color: white;
@@ -173,7 +172,6 @@ footer .socialMedia {
 }
 
 /******************  HERO  ******************/
-
 .hero-slider {
   position: relative;
   text-align: center;
