@@ -136,7 +136,12 @@ footer section {
     padding: 1rem 10px;
 }
 footer .contact span {
-    font-weight: bold;
+    display: flex;
+    padding-bottom: 2px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.2rem;
 }
 footer p, span {
     text-align: center;
@@ -169,6 +174,11 @@ footer .socialMedia {
 }
 .home > h1 {
     padding: 0.7rem;
+}
+.home h1 {
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--text-ligth-back);
 }
 
 /******************  HERO  ******************/
@@ -278,41 +288,43 @@ footer .socialMedia {
         left: 100%;
     }
 }
-
-.home h1 {
-    padding-top: 2rem;
-    text-align: center;
-    color: var(--text-ligth-back);
-}
-
+/******************  SERVICES  ******************/
 .services3d {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
     /* text-align: center; */
 }
+.services3d section {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+}
 .services3d img {
+    position: absolute;
+    display: flex;
     height: 40px;
     width: 40px;
-    align-items: center;
-    justify-content: center;
-    display: block;    /* Ensures the image is centered (copilot) */
     margin-left: auto; 
     margin-right: auto;
+    filter: drop-shadow(0 0 5px rgb(0 0 0 / 50%));  /* Este es mejor que box shadow, porque da sombra al detras de la imagen */
 }
 .services3d h2 {
     text-align: center;
     color: var(--text-ligth-back);
     font-size: 1.4rem;  /*1.2*/
+    padding-bottom: 5px;
+}
+.services3d p {
+    padding-left: 60px;
 }
 
+/******************  EASY CONTACT  ******************/
 .easycontact {
     padding: 1rem;
-    display: flex;
-    flex-direction: row;
+    display: grid;
     padding-top: 10px;
-    justify-content: space-between;
     /* align-items: center; */
     gap: 1.5rem;
 }
@@ -325,18 +337,21 @@ footer .socialMedia {
     background-color: var(--background-dark-color);
     color: var(--text-black-back);
     width: 100%;
+    min-width: 120px;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
-    max-width: 100%;
+    max-width: 90%;
 }
 .easycontact button {
     background-color: var(--tertiary-color);
     width: 40%;
+    min-width: 100px;
     border-radius: 5px;
     height: 30px;
     border: none;
+    margin-top: 2px;
     padding: 0.5rem 1rem;
     /* display: block; margin-left: auto; margin-right: auto;    centers the button */
 }
@@ -345,14 +360,127 @@ footer .socialMedia {
     font-weight: bold;
     cursor: pointer;
 }
+.map {
+    display: flex;
+    justify-content: center;
+    padding: 0 .5rem;
+    width: 100%;
+}
 .map iframe {
     height: 100%;
-    width: 300px;
+    width: 100%;
 }
 
 
 
 /******************  JOIN PAGE  ******************/
+#contact-main h2 {
+    font-size: 1.5rem;
+    color: var(--text-ligth-back);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Orbitron" sans-serif;
+}
+
+/******************  FORM  ******************/
+.form {
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; /* esto alinea los itemns de arriba hacia abajo */
+    padding: 1rem;
+}
+.form-section {
+    display: flex;
+    justify-content: center;
+}
+
+form .formPart {
+    margin: 1rem 2%;
+    justify-content: center;
+}
+.formPart label {
+    display: block;
+    font-size: .8rem;
+    color: var(--text-color);
+    padding-top: .2rem;
+}
+.formPart h3 {
+    font-size: .9rem;
+    color: var(--text-color);
+    margin: 1.5rem .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+.formInfo {
+    display: flex;
+    flex-direction: column;
+    margin: .1rem 0 1rem 0 ;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color:#555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
+.formPart .submitBtn {
+    border: 1px solid black;
+    text-align: center;
+    /* color: rgb(43, 43, 70); */
+    color: var(--text-black-back);
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    /* -webkit-appearance: none; */
+    appearance: none;
+    animation: changeColors 2s infinite alternate linear;
+}
+.formPart input:required {
+    border-left-color: #960000;
+}
+.formPart input:focus {
+    border-left-color: black; 
+    outline: none;
+}
+.formPart input:required:valid {
+    border-left-color: rgb(15, 97, 15);
+}
+.serviceChoice {
+    align-items: center;
+    justify-content: center;
+}
+
+/******************  SERVICES DETAILS  ******************/
+.servicesInfo {
+    border-top: #000 1px solid;
+    font-family: "Orbitron", sans-serif;
+}
+.servicesInfo aside {
+    border: solid 1px #444;
+    border-radius: 20px 20px;
+    padding: 10px;
+    background-color: #bed9d2;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.servicesInfo aside h3 {
+    font-size: 1.2rem;
+    border-bottom: #636363 1px solid;
+    margin: 0;
+}
+.serviceBtn {
+    font-family: "Roboto", sans-serif;
+    margin: 1rem 0;
+    padding: 10px;
+    width: 60%;
+    font-size: .9rem;
+    font-weight: bold;
+    color: var(--text-ligth-back);
+    background-color: var(--tertiary-color);
+}
 @keyframes changeColors {
 	0% {
         border-radius: 10px 20px; 
@@ -379,101 +507,6 @@ footer .socialMedia {
       background-color: #bed9d2;
     }
 }
-
-/******************  FORM  ******************/
-.join {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* align-items: center; /* esto alinea los itemns de arriba hacia abajo */
-    padding: 1rem;
-}
-form.formPart {
-    margin: 1rem 2%;
-}
-.formPart label {
-    display: block;
-    font-size: .8rem;
-    color: var(--text-color);
-    padding-top: .2rem;
-}
-.formPart h3 {
-    font-size: .9rem;
-    color: var(--text-color);
-    margin: 1.5rem 0 .2rem 0;
-    border-bottom: 1px solid #eee;
-}
-.formInfo {
-    display: flex;
-    flex-direction: column;
-    margin: .1rem 0 1rem 0 ;
-    padding: .3rem;
-    border: 1px solid #999;
-    border-radius: 4px;
-    border-left-width: 5px;
-    border-left-color:#555;
-    font-size: 1rem;
-    color: #3D405B;
-    width: 250px;
-}
-.formPart .submitBtn {
-    border: 1px solid black;
-    text-align: center;
-    /* color: rgb(43, 43, 70); */
-    color: var(--text-black-back);
-    padding: .75rem 1.5rem;
-    margin: 2rem 0;
-    font-size: 1.2rem;
-    -webkit-appearance: none;
-    appearance: none;
-    animation: changeColors 2s infinite alternate linear;
-}
-.formPart input:required {
-    border-left-color: #960000;
-}
-.formPart input:focus {
-    border-left-color: black; 
-    outline: none;
-}
-.formPart input:required:valid {
-    border-left-color: rgb(15, 97, 15);
-}
-.levelChoice {
-    align-items: center;
-}
-
-/******************  MEMBERSHIP DETAILS  ******************/
-.memberLevels {
-    border-top: #000 1px solid;
-}
-.memberLevels aside {
-    border: solid 1px #444;
-    border-radius: 20px 20px;
-    padding: 10px;
-    background-color: #bed9d2;
-    text-align: center;
-    margin-bottom: 1rem;
-
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-.memberLevels aside h3 {
-    font-size: 1.2rem;
-    border-bottom: #636363 1px solid;
-    margin: 0;
-}
-.levelButtons {
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 10px;
-    width: 60%;
-    font-size: .9rem;
-    font-weight: bold;
-    color: var(--text-ligth-back);
-    background-color: var(--tertiary-color);
-}
-
 /******************  DIALOG  ******************/
 dialog {
     position: relative;
@@ -484,6 +517,11 @@ dialog {
     box-shadow: 0 0 3rem #777;
     width: 90%;
     max-width: 600px;
+}
+.qqq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 ::backdrop {
     background-color: rgb(0 0 0 / 50%);
@@ -499,7 +537,7 @@ dialog {
 #modalDetails {
     padding-top: 1rem;
 }
-#membershipModal div {
+#serviceModal div {
     display: grid;
     grid-template-columns: auto 44px;
     border-bottom: solid 1px #aaa;
@@ -510,10 +548,10 @@ dialog {
     color: var(--text-color);
     margin-bottom: 1rem;
 }
-#membershipModal span {
+#serviceModal span {
     font-size: 1rem;;
 }
-#membershipModal p {
+#serviceModal p {
     margin: 0;
     padding: 0.5rem 0;
 }

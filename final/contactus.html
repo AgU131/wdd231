@@ -3,127 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu Chamber of Comerce</title>
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Agustin Heredia - Week 01 Activity creating a personal homepage">
+    <title>3DenMente - Official Page</title>
+    <meta name="description" content="Final Proyect 3DenMente printings shop page">
     <meta name="author" content="Agustin Heredia">
+    <meta name="theme-color" content="#100945">
+
+    <meta property="og:title" content="3DenMente">
+    <meta property="og:description" content="3DenMente Home page">
+    <meta property="og:url" content="https://agu131.github.io/wdd231/final">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://agu131.github.io/wdd231/final/images/hero.webp" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WDD231 3DenMente Final Proyect Activity - by Agustin Heredia">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
+    <link rel="icon" href="images/favicon.ico">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    
+
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
-    <script src="scripts/dialog.js" defer></script>
-    
-    <script src="data/members.json" defer></script>
+    <script src="scripts/home_page.js" defer></script>
+    <script src="scripts/aboutservice.js" defer></script>
 
-    <link rel="icon" href="images/favicon_rounded.ico">
+    <!-- <script src="data/products.mjs" defer></script>
+    <script src="data/staff.json" defer></script> -->
 </head>
 
 <body>
-
 <header>
     <div>
-        <div class="head">
-            <div>
-                <img src="images/logo_tree_cgpt.webp" alt="profile image" class="profile_img" width="75" height="75">
-                <div class="profile" id="profile">
-                    <span id="profile_name">Timbuktu</span>
-                    <div>Chamber of Commerce</div>
-                </div>
+        <section class="head">
+            <div class="profile" id="profile">
+                <a href="index.html"><img src="images/logo_and_icons/logo.webp" alt="Logo image" class="logo-img" width="75" height="75"></a>
+                <h1>3D en Mente</h1>
             </div>
-            <button id="hamburger-btn" aria-label="Toggle Menu"> &#9776; </button>   <!-- Hamburger button: &#9776;  or  ☰  -->
-        </div>
+            <button id="hamburger-btn" aria-label="Toggle Menu"> &#9776; </button>
+        </section>
         <nav id="primary-nav">
             <a href="index.html">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="discover.html">Discover</a>
-            <a href="join.html" class="active">Join</a>
+            <a href="products.html">Products</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="proyects.html">Our Proyects</a>
         </nav>
     </div>
 </header>
 
-<main class="home" id="join-main">
-    <h1>Join Us</h1>
-    <div class="join">
-        <section class="form-section">
+<main class="home" id="contact-main">
+    <h1>Contact Us</h1>
+    <div class="form">
+      <section class="form-section">
         <form method="GET" action="thanks.html" class="formPart">
-            <label>First Name <input type="text" class="formInfo" name="first-name" required autocomplete="given-name" placeholder="Peter" title="Your First Name"></label>
-            <label>Last Name <input type="text" class="formInfo" name="last-name" required autocomplete="family-name" placeholder="Parker" title="Your Last Name"></label>
-            <label>Title <input type="text" class="formInfo" name="title" autocomplete="organization-title" placeholder="Spiderman" title="Your Title" pattern="[a-zA-Z0-9 -]{7,}"></label>
-            <label>Email <input type="email" class="formInfo" name="email" required placeholder="example@email.com"  title="Your Email" autocomplete="email"></label>
-            <label>Phone Number <input type="tel" class="formInfo" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="555-555-5555"></label>
-            <label>Organization <input type="text" class="formInfo" name="organization" required title="organization" autocomplete="organization"></label>
-            <label>Business Decription<textarea class="formInfo" name="description"></textarea></label>
+            <label>First Name  <input type="text"  class="formInfo" name="first-name" required autocomplete="given-name" placeholder="Peter" title="Your First Name"></label>
+            <label>Last Name   <input type="text"  class="formInfo" name="last-name" required autocomplete="family-name" placeholder="Parker" title="Your Last Name"></label>
+            <label>Email       <input type="email" class="formInfo" name="email" required autocomplete="email" placeholder="example@email.com"  title="Your Email"></label>
+            <label>Phone Number<input type="tel"   class="formInfo" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="555-555-5555"></label>
+            <label>Organization<input type="text"  class="formInfo" name="organization" title="organization" autocomplete="organization"></label>
+            <label>Description<textarea class="formInfo" name="description"></textarea></label>
 
-            <h3>Select Membership</h3>
-            <label><input type="radio" class="levelChoice" name="level" value="Bronze Membership" checked> Bronze Membership</label>
-            <label><input type="radio" class="levelChoice" name="level" value="Silver Membership"> Silver Membership</label>
-            <label><input type="radio" class="levelChoice" name="level" value="Sealing"> Gold Membership</label>
-            <label><input type="radio" class="levelChoice" name="level" value="Non Profit Membership"> Non Profit Membership</label>
+            <h3>Select Service</h3>
+            <label><input type="radio" class="serviceChoice" name="level" value="3D Printing" checked> 3D Printing</label>
+            <label><input type="radio" class="serviceChoice" name="level" value="3D Modeling"> 3D Modeling</label>
+            <label><input type="radio" class="serviceChoice" name="level" value="Fixing"> Fixing 3D Parts</label>
+            <label><input type="radio" class="serviceChoice" name="level" value="Non Profit Membership"> Expert Consulting</label>
             
-            <input type="submit" class="submitBtn" value="Apply for Membership">
+            <input type="submit" class="submitBtn" value="Send Us a Message">
             <input type="hidden" name="hiddendate" id="today">
         </form>
-        </section>
+      </section>
 
-        <section class="memberLevels">
-            <h2>Membership Levels "L"</h2>
+        <section class="servicesInfo">
+            <h2>3D Services</h2>
             <aside>
-                <h3>Bronze Membership Level</h3>
-                <button id="level1Btn" class="levelButtons">Learn More</button>
+                <h3>3D Printing</h3>
+                <button id="serviceBtnPrint" class="serviceBtn">Learn More</button>
             </aside>
             <aside>
-                <h3>Silver Membership Level</h3>
-                <button id="level2Btn" class="levelButtons">Learn More</button>
+                <h3>3D Modeling</h3>
+                <button id="serviceBtnModel" class="serviceBtn">Learn More</button>
             </aside>
             <aside>
-                <h3>Gold Membership Level</h3>
-                <button id="level3Btn" class="levelButtons">Learn More</button>
+                <h3>Fixing 3D Parts</h3>
+                <button id="serviceBtnFix" class="serviceBtn">Learn More</button>
             </aside>
             <aside>
-                <h3>Non Profit Membership Level</h3>
-                <button id="level4Btn" class="levelButtons">Learn More</button>
+                <h3>Expert Consulting</h3>
+                <button id="serviceBtnConsult" class="serviceBtn">Learn More</button>
             </aside>
         </section>
-        <dialog id="membershipModal">
-            <div>
-                <h4 id="modalTitle"></h4>
-                <button id="closeModal">X</button>
-            </div>
-            <span id="modalDetails"></span>
-        </dialog>
+        <div class="qqq">
+            <dialog id="serviceModal">
+                <div>
+                    <h4 id="modalTitle"></h4>
+                    <button id="closeModal">✕</button>
+                </div>
+                <span id="modalDetails"></span>
+            </dialog>
+        </div>
 </div>
-
 </main>
+
 <footer>
     <div>
         <section class="contact">
-            <span>Timbuktu Chamber of Commerce</span>
-            <p>1234 Main St.</p>
-            <p>Timbuktu, TM 12345</p>
-            <p>chamber@chamber.com</p>
-            <p>(223) 555-5555</p>
+            <span>3D en Mente</span>
+            <p>Cordoba, Argentina</p>
+            <p>3denmente@gmail.com</p>
+            <p>(+54) 9 3525 453-770</p>
         </section>
         <section class="socialMedia">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                <img src="images/fb_icon_ligth.png" alt="Facebook icon" class="social_icon" width="40" height="40">
+                <img src="images/logo_and_icons/fb_icon.png" alt="Facebook icon" class="social_icon" width="40" height="40">
             </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <img src="images/ig_icon.png" alt="Instagram icon" class="social_icon" width="40" height="40">
+            <a href="https://www.instagram.com/3denmente/" target="_blank" rel="noopener noreferrer">
+                <img src="images/logo_and_icons/ig_icon.png" alt="Instagram icon" class="social_icon" width="40" height="40">
             </a>
-            <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer">
-                <img src="images/xtw_icon.png" alt="X icon" class="social_icon" width="40" height="40">
+            <a href="https://wa.me/+5493525453770" target="_blank" rel="noopener noreferrer">
+                <img src="images/logo_and_icons/wsp_icon.png" alt="Whatsapp icon" class="social_icon" width="40" height="40">
             </a>
         </section>
         <section class="myInfo">
-            <p>WDD231 Class Proyect</p>
             <p>🧉 Agustin Heredia 🧉 Argentina</p>
             <p><span id="copywrite"></span></p>
             <p id="lastModified"></p>

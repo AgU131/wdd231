@@ -68,14 +68,75 @@
     right: 25px;
     font-size: 1.2rem;
   }
+  /******************  SERVICES  ******************/
+  .services3d {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    /* text-align: center; */
+  }
+  .services3d section {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .services3d img {
+    position: inherit;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    display: block;    /* Ensures the image is centered (copilot) */
+    margin-left: auto; 
+    margin-right: auto;
+    filter: drop-shadow(0 0 5px rgb(0 0 0 / 20%));  /* Este es mejor que box shadow, porque da sombra al detras de la imagen */
+
+  }
+  .services3d h2 {
+    text-align: center;
+    color: var(--text-ligth-back);
+    font-size: 1.4rem;  /*1.2*/
+    padding-bottom: 5px;
+  }
+  .services3d p {
+    padding-left: 5px;
+  }
+  /******************  EASY CONTACT  ******************/
+  .easycontact {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 1.5rem;
+  }
+  .map {
+    padding: 0;
+  }
+
+
 
   /*           JOIN PAGE           */
-  .join {
+   #contact-main h1 {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-
+  .form-section {
+    display: flex;
+    justify-content: start;
+  }
+  .servicesInfo {
+    border-top: none;
+  }
+ 
 
   /*            DISCOVER PAGE           */
   .discover {
