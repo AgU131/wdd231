@@ -25,12 +25,13 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/directory.css">
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/dialog.js" defer></script>
-    <script src="scripts/home_page.js" defer></script>
     <script src="scripts/slider.js" defer></script>
+    <script src="scripts/projects.js" defer></script>
+    <!-- <script src="scripts/members.js" defer></script> -->
 </head>
 <body>
 <header>
@@ -46,7 +47,7 @@
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
             <a href="contactus.html">Contact Us</a>
-            <a href="proyects.html">Our Proyects</a>
+            <a href="projects.html">Our Proyects</a>
         </nav>
     </div>
 </header>
@@ -54,23 +55,23 @@
     <main>
         <div class="slider-container">
             <div class="slider">
-                <img src="images/printers1.jpg"  alt="Image 1">
-                <img src="images/printers2.webp" alt="Image 2">
-                <img src="images/printers3.jpg"  alt="Image 3">
-                <img src="images/printers4.webp" alt="Image 4">
-                <img src="images/printers5.jpg"  alt="Image 5">
-                <img src="images/printers6.jpg"  alt="Image 6">
-                <img src="images/printers7.webp" alt="Image 7">
-                <img src="images/printers.webp"  alt="Image Extra">
+                <img src="images/printers1.jpg"  alt="Image 1" class="sliderImage">
+                <img src="images/printers2.webp" alt="Image 2" class="sliderImage">
+                <img src="images/printers3.jpg"  alt="Image 3" class="sliderImage">
+                <img src="images/printers4.webp" alt="Image 4" class="sliderImage">
+                <img src="images/printers5.jpg"  alt="Image 5" class="sliderImage">
+                <img src="images/printers6.jpg"  alt="Image 6" class="sliderImage">
+                <img src="images/printers7.webp" alt="Image 7" class="sliderImage">
+                <img src="images/printers.webp"  alt="Image Extra" class="sliderImage">
             </div>
         </div>
-        <h1>Our Proyects</h1>
+        <h1>Our Projects</h1>
         <div class="buttons">
             <button id="gridB" class="active">⏹️Grid</button>
             <button id="listB" class="">📄List</button>
         </div>
-        <div class="member-card">
-            <div id="members" class="grid"></div>
+        <div class="projects-div">
+            <div id="projects" class="grid"></div>
         </div>
     </main>
 </body>

@@ -1,0 +1,120 @@
+/******************  PROJECTS PAGE  ******************/
+/******************  MENU  ******************/
+.buttons {
+	padding: 1rem;
+	text-align: center;
+    justify-content: space-between;
+}
+.buttons button {
+    padding: 1rem;
+	font-weight: 700;
+    border-radius: 10px;
+}
+div.buttons button.active {
+    background-color: #f27d80;
+}
+.project-card section {
+	border: 1px solid rgb(0 0 0 / 0.1);
+	padding: 0.5rem;
+	background-color: #ddd;
+}
+.buttons section h3 {
+	font-size: 1.5rem;
+}
+.project-card section a {
+	font-family: Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+}
+
+
+/******************  GRID  ******************/
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 10px;
+	align-items: center;
+	padding: 10px;
+}
+.grid section {
+	text-align: center;
+}
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+	border: 1px solid #fff;
+}
+.grid img:hover {
+	transform:  scale(1.05);
+	background-color: grey;
+	border-radius: 10px;
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+	/* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); */
+	transition: transform 0.3s ease-in-out;
+}
+.grid section > * {
+	margin: 0.1rem;
+}
+.grid h3 {
+	font-size: 1.2rem;
+}
+.grid .project-card {
+	background-color: #bbb;
+	border-radius:  10px;
+}
+
+
+/******************  LIST  ******************/
+.list {
+	display: flex;
+	flex-direction: column;
+	border:  1px solid #ccc;
+}
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+.list section > * {
+	margin: 0 1rem;
+}
+.list section img {
+	display: none; /* smaller viewports only */
+}
+.list section h3 {
+	font-size: 1rem;
+}
+.list section:nth-child(even) {
+	background-color: #bbb;
+}
+
+
+/******************  SMALL VERSION  ******************/
+@media (max-width: 728px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1rem 2rem;
+        padding: 2rem;
+		gap: 20px;
+		border: 1px solid #ccc;
+		border-radius: 10px;
+    }
+	.grid h2, p {
+		gap: 0px 0px;
+	}
+}

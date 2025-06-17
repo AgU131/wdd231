@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "name": "Phone Holder",
+      "material": "PLA",
+      "use": "House, Daily",
+      "type": "3D Prints",
+      "url": "https://cults3d.com/es/modelo-3d/artilugios/foldable-card-size-phone-stand",
+      "picture": "phone_holder.jpg",
+      "description": "Flexible and portable phone holder designed for daily use."
+    },
+    {
+      "name": "Custom Chess Set",
+      "material": "Resin",
+      "use": "Decoration, Gaming",
+      "type": "3D Prints",
+      "url": "https://www.thingiverse.com/thing:4739653",
+      "picture": "chess.webp",
+      "description": "Full custom 3D printed chess set, perfect for gamers and collectors."
+    },
+    {
+      "name": "Pikachu Character Model",
+      "material": "Digital",
+      "use": "Concept, Gaming",
+      "type": "3D Models",
+      "url": "https://sketchfab.com/3d-models/pikachu-bdd57b2bf2374bb89251c083cb2d834e",
+      "picture": "pikachu.png",
+      "description": "A 3D character designed from scratch for a video game project."
+    },
+    {
+      "name": "Broken 3D Printer Nozzle Repair",
+      "material": "Copper",
+      "use": "Repair, Printer",
+      "type": "3D Fixes",
+      "url": "https://articulo.mercadolibre.com.ar/MLA-1866740358-kit-x-5-nozzle-pico-bronce-ender-hotend-mk8-ender-3-_JM?searchVariation=183985933371#polycard_client=search-nordic&searchVariation=183985933371&backend_model=search-backend&position=14&search_layout=stack&type=item&tracking_id=86e488f4-126e-43b8-9cdc-43498cf97906",
+      "picture": "fixing_nozzle.webp",
+      "description": "A 3D printer nozzle had to be repaired due to a broken nozzle and a misuse of filament."
+    },
+    {
+      "name": "Broken 3D Printer Welding Repair",
+      "material": "Motherboard",
+      "use": "Repair, 3D Printer, Welding, Motherboard",
+      "type": "3D Fixes",
+      "url": "https://sites.library.ualberta.ca/ior-2020/submissions-2024/modified-3d-printer-2",
+      "picture": "fixing_printer.webp",
+      "description": "A custom 3D printer had to be repaired due to a broken microchip."
+    },
+    {
+      "name": "Micro Drone Frame",
+      "material": "PLA",
+      "use": "Electronics, UAV",
+      "type": "3D Prints",
+      "url": "https://cults3d.com/en/3d-model/game/75mm-micro-quad-frame",
+      "picture": "drone.webp",
+      "description": "A lightweight, durable frame designed for a custom drone."
+    },
+    {
+      "name": "Architectural Egypt Model",
+      "material": "Digital",
+      "use": "3D Design, Presentation, Architectural Design",
+      "type": "3D Models",
+      "url": "https://www.example-portfolio.com/",
+      "picture": "egypt.webp",
+      "description": "A scale model of Ancient Egypt, made for architectural visualization."
+    }
+  ]
+}
