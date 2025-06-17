@@ -239,12 +239,12 @@ footer .socialMedia {
     width: 100%;
     height: var(--height);
     overflow: hidden;
-    mask-image: linear-gradient(
+    /* mask-image: linear-gradient(     el validador me dice que no existe esta propiedad, pero no es verdad. Si existe y hace que halla un desvanecimiento en los finales del loop de marcas
         to right,
         transparent,
         #000 10% 90%,
         transparent
-    );
+    ); */
 }
 .brands-slider .list {
     display: flex;
@@ -379,7 +379,7 @@ footer .socialMedia {
     color: var(--text-ligth-back);
     text-align: center;
     margin-bottom: 1rem;
-    font-family: "Orbitron" sans-serif;
+    font-family: "Orbitron", sans-serif;
 }
 
 /******************  FORM  ******************/
@@ -526,9 +526,10 @@ dialog {
     /* top: 50%;
     left: 50%;   we don't need those */
 }
-dialog:modal {
-    overlay: auto !important;  /*hace que esto se tomoe como principal supersocision*/
-}
+/* dialog:modal {    en teoria hace que esto se tome como principal supersocision
+    overlay: auto !important;  
+} 
+*/
 ::backdrop {
     background-color: rgb(0 0 0 / 50%);
 }
@@ -563,7 +564,7 @@ dialog:modal {
 #modalDetails {
     padding-top: 1rem;
     font-size: 1rem;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     color: var(--text-color);
 }
 #serviceModal p {
