@@ -25,10 +25,12 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/products.css">
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/home_page.js" defer></script>
+    <script src="scripts/products.js" defer></script>
     
     <!-- <script src="data/products.mjs" defer></script>
     <script src="data/staff.json" defer></script> -->
@@ -54,13 +56,16 @@
 
 <main>
     <h1>PRODUCTS</h1>
-    <div class="buttons">
-        <button id="gridB" class="active">⏹️Grid</button>
-        <button id="listB" class="">📄List</button>
+    <div class="mybuttons">   <!-- It is like a nav bar -->
+        <button id="all" class="active">All</button>
+        <button id="printers" class="">Printers</button>
+        <button id="filaments" class="">Filaments</button>
+        <button id="parts" class="">Components</button>
     </div>
-    <div class="member-card">
-        <div id="members" class="grid"></div>
+    <div class="cartdiv">
+        <img src="images/logo_and_icons/shop_cart_icon.png" alt="Shop Cart Icon" id="carticon">
     </div>
+    <div id="products" class="products"></div>
     
 </main>
 

@@ -1,71 +1,96 @@
-<section id="exercise-container" class="card-container"></section>
+// Reference to the div and data path
+const cards = document.querySelector('#products');
+const path = './data/products.json';
 
+let products=[]
 
-// Reference to the container
-const container = document.getElementById("exercise-container");
+//function to fetch data
+async function getProducts() {
+  try {
+    const response = await fetch(path);
+    const data = await response.json();
+    //console.log(data)
+    products=data.products;
+    displayProducts(products);
+  } catch (error) {
 
-// Create cards for each exercise
-exercises.forEach(exercise => {
-  const card = document.createElement("div");
-  card.className = "card";
-  card.innerHTML = `
-      <img src="${exercise.image}" alt="${exercise.name}" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-      <h2>${exercise.name}</h2>
-      <p><strong>Machine:</strong> ${exercise.machine}</p>
-      <p><strong>Time:</strong> ${exercise.time}</p>
-      <p><strong>Difficulty:</strong> ${exercise.difficulty}</p>
-      <p><strong>Type:</strong> ${exercise.type}</p>
-      <p><strong>Muscle Group:</strong> ${exercise.muscleGroup}</p>
-      <p><strong>Equipment:</strong> ${exercise.equipmentRequired ? "Yes" : "No"}</p>
-      <button class="btn">Start Exercise</button>
-      <button class="btn">☆ Add to Favorites ☆</button>
-      `;
-  container.appendChild(card);
-});
-
-
-// Function for clean and show only filtered exercises
-function filterExercisesByMuscle(muscle) {
-  container.innerHTML = "";
-
-  const filtered = muscle === "All" ? exercises :
-    exercises.filter(ex => ex.muscleGroup.toLowerCase().includes(muscle.toLowerCase()));
-
-  if (filtered.length === 0) {
-    container.innerHTML = "<p>No exercises found for that muscle group.</p>";
-    return;
   }
+}
+getProducts();
 
-  filtered.forEach(exercise => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
-      <img src="${exercise.image}" alt="${exercise.name}" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-      <h2>${exercise.name}</h2>
-      <p><strong>Machine:</strong> ${exercise.machine}</p>
-      <p><strong>Time:</strong> ${exercise.time}</p>
-      <p><strong>Difficulty:</strong> ${exercise.difficulty}</p>
-      <p><strong>Type:</strong> ${exercise.type}</p>
-      <p><strong>Muscle Group:</strong> ${exercise.muscleGroup}</p>
-      <p><strong>Equipment:</strong> ${exercise.equipmentRequired ? "Yes" : "No"}</p>
-      <button class="btn">Start Exercise</button>
-      <button class="btn">☆ Add to Favorites ☆</button>
-    `;
-    container.appendChild(card);
+
+const displayProducts = (products) => {
+  cards.innerHTML = '';
+ 
+  products.forEach(product => {
+    const productname = document.createElement('h2');
+    const productdescr = document.createElement('p');
+    const productcolor = document.createElement('li');
+    const productcost = document.createElement('span');
+    const productimg = document.createElement('img');
+
+    productname.textContent = product.name;
+    productdescr.textContent = product.description;
+    productcolor.textContent = `Color: ${product.color}`;
+    productcost.textContent = `Price: ${product.price}`;
+    productimg.src = `${product.image}`;
+    productimg.alt = product.name;
+    productimg.loading = 'lazy';
+
+    const productcard = document.createElement('section');
+    productcard.classList.add('mycards');
+    productcard.appendChild(productname)
+    productcard.appendChild(productimg)
+    productcard.appendChild(productdescr)
+    productcard.appendChild(productcolor)
+    productcard.appendChild(productcost)
+    
+    cards.appendChild(productcard)
   });
 }
 
-// Event listeners for each muscle group
-const muscleFilters = ["All", "Chest", "Arms", "Legs", "Back", "Abs", "Full Body"];
 
-muscleFilters.forEach(muscle => {
-  const id = muscle.toLowerCase().replace(" ", "");
-  document.getElementById(id).addEventListener("click", (event) => {
-    event.preventDefault();
-    filterExercisesByMuscle(muscle);
-  });
+// Display each filtered product and change the button's active color
+// DISPLAY  ALL
+const all = document.querySelector('#all')
+all.addEventListener('click', () => {
+  all.className="active"
+  printers.className=""
+  filaments.className=""
+  parts.className=""
+  displayProducts(products)
 });
 
+// DISPLAY PRINTERS
+const printers = document.querySelector('#printers')
+printers.addEventListener('click', () => {
+  const result = products.filter((course) => course.item === 'Printer');
+  all.className=""
+  printers.className="active"
+  filaments.className=""
+  parts.className=""
+  displayProducts(result)
+});
 
-// Show all exercises by default when the page loads
-filterExercisesByMuscle("All");
+// DISPLAY FILAMENTS
+const filaments = document.querySelector('#filaments')
+filaments.addEventListener('click', () => {
+  const result = products.filter((course) => course.item === 'Filaments');
+  all.className=""
+  printers.className=""
+  filaments.className="active"
+  parts.className=""
+  displayProducts(result)
+});
+
+// DISPLAY COMPONENTS (PARTS)
+const parts = document.querySelector('#parts')
+parts.addEventListener('click', () => {
+  const result = products.filter((course) => course.item === 'Parts');
+  all.className=""
+  printers.className=""
+  filaments.className=""
+  parts.className="active"
+  displayProducts(result)
+});
+
