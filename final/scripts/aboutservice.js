@@ -1,4 +1,4 @@
-// import { services } from '../data/services.mjs'
+import { services } from '../data/services.mjs'
 
 // Modal General Constants
 const serviceModal = document.querySelector("#serviceModal")
@@ -16,6 +16,30 @@ const consultBtn = document.querySelector('#serviceBtnConsult');
 closeModal.addEventListener("click", () => serviceModal.close())
 
 // Generic function for all Modals
+function configServiceModalInfo(button, service) {
+  button.addEventListener('click', () => {
+    modalTitle.innerHTML = service.title;
+    modalDetails.innerHTML = `
+      <p>Description:</p>
+      <ul>
+        ${service.description.map(desc => `<li>${desc}</li>`).join('')}
+      </ul>
+      <p>Cost: ${service.cost}</p>`;
+    serviceModal.showModal();
+  });
+}
+
+// Calling Generic function for each Modal with each service info
+configServiceModalInfo(printBtn, services[0]);    // 3D Printing Service Info
+configServiceModalInfo(modelBtn, services[1]);    // 3D Modeling Service Info
+configServiceModalInfo(fixBtn, services[2]);      // Fixing 3D Parts Service Info
+configServiceModalInfo(consultBtn, services[3]);  // Experts Consult Service Info
+
+
+
+
+/* This is without the .mjs with the info in the array
+// Generic function for all Modals
 function configServiceModalInfo(button, title, description, cost) {
   button.addEventListener('click', () => {
     modalTitle.innerHTML = title
@@ -30,7 +54,6 @@ function configServiceModalInfo(button, title, description, cost) {
   });
 };
 
-
 // Calling Generic function for each Modal with each service info
 configServiceModalInfo(
   printBtn,
@@ -44,21 +67,4 @@ configServiceModalInfo(
   ],
   'Send us your 3D Design!'
 )
-
-
-
-
-
-function showstuff(x) {
-    //console.log(x)
-    mytitle.textContent = x.title
-    mylist.innerHTML = ''
-    //console.log(x.details)
-    x.details.forEach(y => {
-        //console.log(y)
-        const item = document.createElement('li')
-        item.textContent = y
-        mylist.appendChild(item)
-    })
-    mydialog.showModal()
-} // end function
+*/

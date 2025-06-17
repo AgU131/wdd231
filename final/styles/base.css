@@ -522,6 +522,7 @@ dialog {
     box-shadow: 0 0 3rem #777;
     width: 60vw;       /* this sets the modal width on a responsive way */
     margin: auto 15vw; /* this sets the modal on the center center*/
+    
     /* top: 50%;
     left: 50%;   we don't need those */
 }
@@ -540,9 +541,16 @@ dialog:modal {
     border-radius: 4px 4px;
 }
 #serviceModal div {
-    display: grid;
-    grid-template-columns: auto 44px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
     border-bottom: solid 1px #aaa;
+}
+#serviceModal div span p, ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;  /*not really necesary*/
 }
 #modalTitle {
     font-family: "Orbitron", sans-serif;
@@ -564,6 +572,7 @@ dialog:modal {
 }
 dialog:-internal-dialog-in-top-layer {
     position: fixed;
+    min-width: 18em;  /*Fixing the minimum width posible*/
     inset-block-start: 0px;
     inset-block-end: 0px;
     max-width: calc(100% - 2em - 6px);
