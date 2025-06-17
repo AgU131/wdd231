@@ -1,6 +1,15 @@
 {
     "proyects": [
-        { 
+        {
+
+        },
+        {
+            "name": "Phone Holder",
+            "material": "23 Edge Road, Australia",
+            "use": "555-555-5557",
+            "design": "https://google.com/",
+            "picture": "member7.jpg",
+            "description": 1
         }
     ]
 }
