@@ -383,6 +383,32 @@ footer .socialMedia {
 }
 
 /******************  FORM  ******************/
+@keyframes changeColors {
+	0% {
+        border-radius: 10px 20px; 
+        background-color: #3D405B;
+    }
+    50% {
+        border-radius: 10px 10px; 
+        background-color: rgb(50, 88, 90);
+    }
+    100% {
+        border-radius: 20px 10px; 
+        background-color: rgb(82, 81, 50);
+    }
+}
+@keyframes slidein {
+    from {
+      opacity: 0%;
+      margin-top: 50px;
+      background-color: #aebb1a;
+    }
+    to {
+      opacity: 100%;
+      margin-top: 0px;
+      background-color: #bed9d2;
+    }
+}
 .form {
     flex-direction: column;
     justify-content: space-evenly;
@@ -459,7 +485,7 @@ form .formPart {
     border: solid 1px #444;
     border-radius: 20px 20px;
     padding: 10px;
-    background-color: #bed9d2;
+    background-color: var(--tertiar-color); /*#bed9d2*/
     text-align: center;
     margin-bottom: 1rem;
 
@@ -481,47 +507,26 @@ form .formPart {
     color: var(--text-ligth-back);
     background-color: var(--tertiary-color);
 }
-@keyframes changeColors {
-	0% {
-        border-radius: 10px 20px; 
-        background-color: #3D405B;
-    }
-    50% {
-        border-radius: 10px 10px; 
-        background-color: rgb(50, 88, 90);
-    }
-    100% {
-        border-radius: 20px 10px; 
-        background-color: rgb(82, 81, 50);
-    }
-}
-@keyframes slidein {
-    from {
-      opacity: 0%;
-      margin-top: 50px;
-      background-color: #aebb1a;
-    }
-    to {
-      opacity: 100%;
-      margin-top: 0px;
-      background-color: #bed9d2;
-    }
-}
+
 /******************  DIALOG  ******************/
 dialog {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: .4rem;
     padding: 1.5rem;
     background-color: #fff;
     box-shadow: 0 0 3rem #777;
-    width: 90%;
-    max-width: 600px;
+    width: 60vw;       /* this sets the modal width on a responsive way */
+    margin: auto 15vw; /* this sets the modal on the center center*/
+    /* top: 50%;
+    left: 50%;   we don't need those */
 }
-.qqq {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+dialog:modal {
+    overlay: auto !important;  /*hace que esto se tomoe como principal supersocision*/
 }
 ::backdrop {
     background-color: rgb(0 0 0 / 50%);
@@ -534,28 +539,39 @@ dialog {
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: 4px 4px;
 }
-#modalDetails {
-    padding-top: 1rem;
-}
 #serviceModal div {
     display: grid;
     grid-template-columns: auto 44px;
     border-bottom: solid 1px #aaa;
 }
 #modalTitle {
+    font-family: "Orbitron", sans-serif;
+
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--text-color);
     margin-bottom: 1rem;
 }
-#serviceModal span {
-    font-size: 1rem;;
+#modalDetails {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-family: "Roboto" sans-serif;
+    color: var(--text-color);
 }
 #serviceModal p {
     margin: 0;
     padding: 0.5rem 0;
 }
-
+dialog:-internal-dialog-in-top-layer {
+    position: fixed;
+    inset-block-start: 0px;
+    inset-block-end: 0px;
+    max-width: calc(100% - 2em - 6px);
+    max-height: calc(100% - 2em - 6px);
+    user-select: text;
+    visibility: visible;
+    overflow: auto;
+}
 
 
 /******************  THANK YOU PAGE  ******************/

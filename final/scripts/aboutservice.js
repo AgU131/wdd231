@@ -28,7 +28,7 @@ function configServiceModalInfo(button, title, description, cost) {
     `;
     serviceModal.showModal();
   });
-}
+};
 
 
 // Calling Generic function for each Modal with each service info
@@ -43,9 +43,22 @@ configServiceModalInfo(
     'Early access to community yard sales.'
   ],
   'Send us your 3D Design!'
-);
+)
 
 
 
 
-//HIDDEN DATE for the Form
+
+function showstuff(x) {
+    //console.log(x)
+    mytitle.textContent = x.title
+    mylist.innerHTML = ''
+    //console.log(x.details)
+    x.details.forEach(y => {
+        //console.log(y)
+        const item = document.createElement('li')
+        item.textContent = y
+        mylist.appendChild(item)
+    })
+    mydialog.showModal()
+} // end function
