@@ -161,7 +161,12 @@ footer .socialMedia {
     justify-content: space-between;
     align-items: center;
 }
+.video-link {
+    color: var(--tertiar-color);
+    justify-content: center;
+    align-items: center;
 
+}
 
 
 
