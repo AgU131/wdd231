@@ -20,7 +20,7 @@ function changeImage(direction) {
 showImage(currentImageIndex);
 
 
-
+// QUOTE API:
 // Load Quote of the Day
 async function getTechQuote() {
   const quoteEl = document.getElementById("quote");
