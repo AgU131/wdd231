@@ -1,4 +1,6 @@
 /******************  PROJECTS PAGE  ******************/
+
+
 /******************  MENU  ******************/
 .buttons {
 	padding: 1rem;
@@ -25,6 +27,29 @@ div.buttons button.active {
 	font-family: Arial, sans-serif;
 	font-size: 0.85rem;
 	color: navy;
+}
+
+/******************  QUOTE API  ******************/
+.quote-box {
+  background-color: var(--background-dark-color);
+  color: var(--tertiar-color);
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.quote-box h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+#quote {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+#author {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
 }
 
 

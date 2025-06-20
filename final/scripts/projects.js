@@ -21,6 +21,28 @@ showImage(currentImageIndex);
 
 
 
+// Load Quote of the Day
+async function getTechQuote() {
+  const quoteEl = document.getElementById("quote");
+  const authorEl = document.getElementById("author");
+
+  try {
+    const response = await fetch("https://api.quotable.io/random?tags=technology|science|famous-quotes");
+    const data = await response.json();
+
+    quoteEl.textContent = `"${data.content}"`;
+    authorEl.textContent = `– ${data.author}`;
+  } catch (error) {
+    quoteEl.textContent = "Technology is best when it brings people together.";
+    authorEl.textContent = "– Matt Mullenweg";
+  }
+}
+
+getTechQuote();
+
+
+
+
 //Display all Projects
 document. addEventListener ('DOMContentLoaded', () => {
   const cards = document.querySelector('#projects');
